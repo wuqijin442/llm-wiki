@@ -1,0 +1,5 @@
+{
+  "folder": "raw/01-Daily",
+  "format": "YYYY-MM-DD",
+  "template": "raw/80-Templates/每日笔记.md"
+}

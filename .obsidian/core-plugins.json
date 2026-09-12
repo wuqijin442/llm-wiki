@@ -1,0 +1,12 @@
+{
+  "core": true,
+  "daily-notes": true,
+  "templates": true,
+  "graph": true,
+  "canvas": true,
+  "outline": true,
+  "tag-pane": true,
+  "search": true,
+  "backlink": true,
+  "bookmarks": true
+}
