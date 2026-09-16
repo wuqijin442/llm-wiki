@@ -82,6 +82,7 @@ SORT updated DESC
 | 2026-09-14 | — | 全库只读 lint（30 内容页 + 5 元页面 + 15 知识素材） | 字段全齐(description/status/category/sources 30/30)；无矛盾、无断链、无缺失概念页、无未消化素材、无 stale(均 2026-09-12/14 更新)；孤立页 ComfyUI(0 内容入链)；index 素材总数记 16 实为 15 | 两项为机械修复项，本轮仅追加台账未改内容页；index 计数与 ComfyUI 入链留待下次 ingest 补；23 `seed` 页待后续补第二来源升 `growing` |
 | 2026-09-15 | — | 增量（新增 1 页 + 1 页补充） | 新 1 页 `seed`（[[每日AI素材-2026-09-15-摘要]]）；[[Agent]] 补趋势观察（sources 4，保持 `growing`）；全库 25 `seed` / 7 `growing` | 新 `seed` 页待下次 ingest 补第二来源；RSIAgent 超 GPT-6 Astra 数值待联网 `refresh` 核验（见摘要 §待核实） |
 | 2026-09-16 | — | 增量（新增 4 页 + 3 页补充 + 1 页状态流转） | 新 4 页均 `seed`（[[Proteus-自进化harness框架-摘要]] / [[Proteus]] / [[Harness自进化]] / [[自进化测量标尺]]）；[[Agent]]、[[双环知识飞轮]]、[[AI智能体工程方法论]] 补 Proteus 关联内容；[[双环知识飞轮]] → `growing`（sources 2）；全库 28 `seed` / 8 `growing` | 新 `seed` 页待后续 ingest 补第二来源；R=1.63/0.93 与 v0.3.0 清单待对照论文或上游更新 `refresh`；机制升级（AGENTS.md/growth）方案待用户确认后另案落地 |
+| 2026-09-16 | — | 增量（每日素材采集 + 1 页补充） | 新 1 页 `seed`（[[每日AI素材-2026-09-16-摘要]]）；[[Agent]] 补「每日素材信号（2026-09-16）」H3 子节、[[Harness自进化]] 补外部印证出链；全库 29 `seed` / 8 `growing` | 新 `seed` 页待下次 ingest 补第二来源；GitHub/Gitee/arXiv 数值为页面声称值未独立核验（见摘要 §待核实）；Agent.md 已有 09-16 Proteus 趋势节，本次用 H3 子节规避 H2 重复 |
 
 ## 7. 日志归档规则
 

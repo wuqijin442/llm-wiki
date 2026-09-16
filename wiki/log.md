@@ -2,6 +2,18 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-16] ingest | 每日AI素材-2026-09-16（四渠道头部采集 + 增量入库）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-16.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；HuggingFace papers 本环境 fetch failed → 改用 WebSearch 补 5 条；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 20 篇（排除 `80-Templates` 与 `articles/README.md`）；19 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（经 Grep 核对 `每日AI素材-2026-09-14/15` 均已引用、`2026-09-16` 尚未引用，确认待消化集合 = 1）
+- 新建：[[每日AI素材-2026-09-16-摘要]]（摘要页：四渠道亮点提炼 + 自维护 Wiki 开源印证 + 知识库防腐坏同构 + Plan Injection 安全议题；含待核实 5 项）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-16）」H3 子节，避开已存在的 09-16 Proteus 趋势节；相关链接 +1；updated 维持 2026-09-16，status 维持 growing）
+- 更新：[[Harness自进化]]（「与相关概念的边界」节补「外部印证（2026-09-16）」出链，WeKnora/Social Harness/ECC 印证「演化对象=harness」；status 维持 seed，sources 不变）
+- 台账：index.md（36→37 页，素材 19→20）、log.md、growth.md、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + 网络强化 Harness自进化.md；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-16 趋势节（Proteus 来源）→ 改用 H3 子节规避重复 H2
+- 待核实：GitHub stars today 为页面声称值未独立核验；Gitee 列表为存量热度非当日趋势；arXiv 2609.xxxxx ID 未独立核验；Plan Injection/Gavel/Social Harness/BPO 来自媒体日报未对照原文；WeKnora 与本项目「自生长」属类比非同一来源
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-16] maintain | 自动化任务同步至 v2.1 / Proteus 式 episode 协议（用户指令）
 
 - 触发：用户指令「参考 Proteus 升级项目并更新自动化任务内容，然后推送最新代码」

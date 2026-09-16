@@ -15,6 +15,7 @@ sources:
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-14]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-15]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-16]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -73,12 +74,24 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 概念展开见 [[Harness自进化]]、[[自进化测量标尺]]；与本库自生长机制的对照见 [[双环知识飞轮]]。
 
+### 每日素材信号（2026-09-16）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-16-摘要]]）把 09-15 的「harness 护城河 + RSI」判断进一步坐实到**生产/社区级证据**：
+
+- **自维护 Wiki 开源实现**：`Tencent/WeKnora`（Go）把原始文档变成可查询 RAG + 自主推理 agent + **自维护 Wiki**，与本库「LLM Wiki 自生长」高度同构——外部印证「知识库能自己长」已是可落地产品形态，不止方法论设想。
+- **agent harness 工具持续冲榜**：`alibaba/open-code-review`（代码审查）、`cloudflare/security-audit-skill`（安全审计 skill）、`addyosmani/agent-skills`（skill 合集）、`affaan-m/ECC`（agent harness 性能优化系统）延续「竞争焦点在底座/工具层」的走势。
+- **安全边界被量化**：热点补充的 `Plan Injection` 攻击可在输入上下文植入良性推理逻辑、绕过 CoT 监视器诱导有害行为——关联 [[意图路由与服务端兜底]] 的「LLM 失败时服务端确定性兜底」必要性。
+- **多 agent 节制设计**：`Decomposition Buys Integrity, Not Yield` 指出任务切分提升完整性但不提升、甚至降低整体产出，对「无脑加 agent」orthodoxy 形成反驳证据。
+
+> 单 agent 能力 → 底座/工具层 → 自我演化 → 生产印证，是本库 [[Agent]] 趋势观察（09-14 → 09-15 → 09-16）的主线。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
 - [[AI应用开发]] - 应用层核心组件之一
 - [[每日AI素材-2026-09-14-摘要]] - 2026-09-14 agent 工具化冲榜趋势信号
 - [[每日AI素材-2026-09-15-摘要]] - 2026-09-15 agent 工具化 + RSI 热点趋势信号
+- [[每日AI素材-2026-09-16-摘要]] - 2026-09-16 自维护 Wiki 开源印证 + agent harness 工具 + Plan Injection 安全议题
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）
