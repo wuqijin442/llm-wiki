@@ -14,6 +14,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
 description: AI 大模型应用学习路线第4篇：RAG 全链路、分块/向量库/检索优化，以及 2026 新增的 Agent 记忆层五层栈。
+status: seed
 ---
 
 # RAG检索增强生成学习笔记摘要

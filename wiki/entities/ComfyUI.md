@@ -13,6 +13,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/记忆-本地内容创作与自动化工作流]]"
 description: 本地可视化 AI 生成工作流工具，承载漫剧/视频创作的节点式管线。
+status: seed
 ---
 
 # ComfyUI

@@ -12,6 +12,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/记忆-DGX-AI智能体与RAG工程]]"
 description: 本地大模型推理运行时，承载本地 LLM 供 agent 网关 bypass 直连调用。
+status: seed
 ---
 
 # Ollama

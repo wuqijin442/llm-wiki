@@ -13,6 +13,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
 description: AI 大模型应用学习路线开篇：澄清转岗定位为应用层而非算法层，盘点已有资产与赛道时机。
+status: seed
 ---
 
 # 为什么转岗AI大模型应用摘要

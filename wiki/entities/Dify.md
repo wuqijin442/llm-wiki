@@ -14,6 +14,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/10-Work/langgenius-dify]]"
 description: 低代码/无代码 AI 应用开发平台，支持 Agentic workflow、RAG 管道、多模型多工具协作。
+status: seed
 ---
 
 # Dify

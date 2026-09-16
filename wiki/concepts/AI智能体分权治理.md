@@ -14,6 +14,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/记忆-DGX-AI智能体与RAG工程]]"
 description: 智能体按角色分层（admin/engineer/business），输出内容按 tier 分级，落实最小权限与可追踪变更。
+status: seed
 ---
 
 # AI智能体分权治理

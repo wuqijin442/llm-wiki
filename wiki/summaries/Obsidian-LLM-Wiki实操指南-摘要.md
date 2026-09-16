@@ -14,6 +14,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/00-Inbox/Obsidian-LLM-Wiki实操指南]]"
 description: 用 Obsidian + LLM 搭建自增长知识库的完整实操指南，含四层架构与五种工作流。
+status: seed
 ---
 
 # Obsidian-LLM-Wiki实操指南摘要
@@ -48,7 +49,7 @@ Schema 文件（AGENTS.md / CLAUDE.md）定义四部分：目录结构与权限�
 - 这套模式的关键洞见是把"检索"换成"编译"——与传统 RAG 的每次重推相比，wiki 是在做一次性的知识投资。
 - Schema 的迭代心态很重要：先最小可用，用起来再改。
 
-## 疑问待确认
+## 待核实
 
 - 跨设备多人协作时的冲突如何处理，文章的 git 方案是否够用，可后续验证。
 
@@ -56,5 +57,6 @@ Schema 文件（AGENTS.md / CLAUDE.md）定义四部分：目录结构与权限�
 
 - [[Obsidian]] - 承载本模式的笔记工具
 - [[RAG]] - 与 LLM Wiki 形成对比的知识处理范式
+- [[自生长知识库实战-苍何]] - 同主题的另一份实践（含三种搭建路径对比）
 - [[双链网络]] - 交叉引用的基础
 - [[LLM-Wiki-vs-RAG]] - 模式对比分析

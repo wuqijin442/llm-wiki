@@ -16,6 +16,7 @@ sources:
   - "[[raw/20-Tech/记忆-DGX-工作区日志与回执要点]]"
   - "[[raw/20-Tech/记忆-DGX-已知坑位与疏漏教训集]]"
 description: 从 DGX AI 智能体工程实践提炼的可复用方法论：部署铁律、自愈闭环、token 预算、意图路由兜底、协作契约。
+status: growing
 ---
 
 # AI智能体工程方法论

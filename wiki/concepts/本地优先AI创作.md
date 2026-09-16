@@ -14,6 +14,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/记忆-本地内容创作与自动化工作流]]"
 description: 以本地工具（如 ComfyUI）承载漫剧/视频创作全流程，禁止 SaaS，强调硬件预算内调度与灰度降级。
+status: seed
 ---
 
 # 本地优先AI创作

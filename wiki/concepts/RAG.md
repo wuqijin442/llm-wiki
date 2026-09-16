@@ -14,6 +14,7 @@ sources:
   - "[[raw/00-Inbox/Obsidian-LLM-Wiki实操指南]]"
   - "[[raw/20-Tech/RAG检索增强生成]]"
 description: 检索增强生成（Retrieval-Augmented Generation），LLM 结合外部文档检索的主流交互方式。
+status: growing
 ---
 
 # RAG

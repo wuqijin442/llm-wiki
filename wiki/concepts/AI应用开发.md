@@ -13,6 +13,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
 description: 以调用大模型为核心、偏工程化的后端应用开发方向，2026 企业落地优先级领军。
+status: seed
 ---
 
 # AI应用开发

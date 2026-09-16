@@ -12,6 +12,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/00-Inbox/Obsidian-LLM-Wiki实操指南]]"
 description: 基于纯本地 markdown 文件的知识管理工具，原生支持双链、图谱视图和丰富插件生态。
+status: seed
 ---
 
 # Obsidian

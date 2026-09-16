@@ -13,6 +13,7 @@ updated: 2026-09-12
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
 description: 生产首选的分布式向量数据库，面向企业级大规模向量检索场景。
+status: seed
 ---
 
 # Milvus
