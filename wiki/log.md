@@ -2,6 +2,44 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-16] maintain | 自动化任务同步至 v2.1 / Proteus 式 episode 协议（用户指令）
+
+- 触发：用户指令「参考 Proteus 升级项目并更新自动化任务内容，然后推送最新代码」
+- 动作：automation_update 将 `llmWiki 每日素材自动入库`（bd9582d1）prompt 重写为 **observe→propose→act→reflect** 四相 episode 循环，对齐 AGENTS.md v2.1：
+  - observe：差异检测 + 读 §8 活跃 disposition / GoalConfig（默认 no-goal）
+  - propose：强制先列方案清单再 act
+  - act：增量归并 + 熵减
+  - reflect：记 churn/travel + 结晶判读 + 比较前可靠性门槛
+- 配套：本条目与 09-16 Proteus 仓库精读 + Schema v2.1 升级**一并提交推送**（此前均本地未提交、未 push）
+- 备注：自动化 prompt 存于 WorkBuddy automation store（非仓库文件）；本次推送的是 09-16 的仓库改动（AGENTS v2.1 / 新 Proteus 三页 / growth·log·index·SKILL·PROMPTS·README 更新）
+
+## [2026-09-16] maintain | Schema v2.1：O-P-A-R / 变动分解 / disposition 协议 / 比较可靠性（用户已确认）
+
+- 触发：Proteus 精读后的机制升级，用户在方案 A/B/C/D 中全选确认
+- `AGENTS.md` → **v2.1**：§4 增补变动分解（added/revised/merged + churn + travel）；§7 Ingest 协议化为 observe→propose→act→reflect（reflect 必记意外）；§7 Lint 增补「比较前可靠性」；**新增 §8 可移除 disposition 实验协议**（单一/有期限/撤除后结晶判读）
+- `wiki/growth.md`：复盘表增加 churn 列（历史行已回算）；累计 travel=45（至 09-16）；表头注明读法
+- `PROMPTS.md`：ingest/lint/生长复盘提示词对齐 v2.1；新增 §9 disposition 实验模板；速查表 +1 行
+- `skills/llm-wiki/SKILL.md`：核心机制节对齐 O-P-A-R、churn、§8
+- `README.md`：工作流指令表同步（ingest/lint/生长复盘 + disposition 实验）
+- 原则：**raw/ 零改动**；知识页正文不写入实验遵守率（防污染）
+- 备注：未改 `.obsidian/`、未构建、未提交；与同日 Proteus ingest 条目配套
+
+## [2026-09-16] ingest | Proteus 仓库精读（harness 自进化框架 + 测量标尺）
+
+- 来源：`raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读`（浅克隆 github.com/proteus-evolve/Proteus @ 962304b，2026-08-28 提交；精读 README + EPISODE.md + MEASUREMENTS.md + disposition/episode_protocol/distance/crystallize/stream 源码；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材 18 篇全部已被引用；本次新建精读素材 = 唯一新增未消化素材
+- 新建：[[Proteus-自进化harness框架-摘要]]（摘要页：三差异化主张、可迁移机制判断表、待核实 3 项）
+- 新建：[[Proteus]]（实体页：定位/属性/架构分工/五条设计要点/CLI）
+- 新建：[[Harness自进化]]（概念页：演化对象从权重到 harness；Surface/四相位/事务契约/认识论协议；与训练、自愈、LLM Wiki、RSI 的边界）
+- 新建：[[自进化测量标尺]]（概念页：结构距离+churn+travel、行为距离+R、结晶两阶段；通用统计纪律十条；迁移到本库指标的场景）
+- 更新：[[Agent]]（补「趋势观察（2026-09-16）」+ sources + 出链；RSI 议题落到可复现实验仪器；status 维持 growing）
+- 更新：[[双环知识飞轮]]（补「对照：harness 自进化」小节 + Proteus 出入链；sources +1 → status seed→growing）
+- 更新：[[AI智能体工程方法论]]（补 §6 Harness 演化的测量纪律 + sources；与「证据优先」文化挂钩）
+- 更新：[[自生长知识库实战-苍何]]（关联页 +1 指向 [[自进化测量标尺]]；不计第二来源，status 维持 seed）
+- 台账：index.md（32→36 页，素材 18→19）、log.md、growth.md、lifecycle.md
+- 待核实：R=1.63→0.93 与 v0.3.0 清单为 README/快照自述，未对照论文；dsh/pi 构建细节未实跑；机制升级方案另案待确认（见 log 同日后续条目）
+- 备注：未改 `.obsidian/`、未构建、未提交；**AGENTS.md Schema 变更待确认**（参考既有惯例）
+
 ## [2026-09-15] ingest | 每日AI素材-2026-09-15（四渠道头部采集 + 增量入库）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-15`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；raw 既有文件零改动）

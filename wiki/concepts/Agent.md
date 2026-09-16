@@ -9,12 +9,13 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-15
+updated: 2026-09-16
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-14]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-15]]"
+  - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
 ---
@@ -66,6 +67,12 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 来源与细节见 [[每日AI素材-2026-09-15-摘要]]（信号提炼）。RSI / 自改进闭环 / eval 可观测性关联 [[AI智能体工程方法论]]；Agentic Visual RAG 关联 [[RAG]]。
 
+## 趋势观察（2026-09-16）
+
+09-15 的 RSI 热点从「议题」落到「可复现实验仪器」：精读 [[Proteus]]（MIT，研究预览）可见 harness 自进化的工程化路径——**演化对象从权重移到 harness**（prompts/memory/skills/tools/控制循环），用 `observe → propose → act → reflect` 四相位 episode 让 agent 改写自己，并用结构距离 / 行为距离 / 结晶测试测量变化，而非只报 benchmark 分。与 09-14「Harness 是 2026 护城河」判断衔接：护城河不只是「有 harness」，还包括**能否测量 harness 怎么长**。
+
+> 概念展开见 [[Harness自进化]]、[[自进化测量标尺]]；与本库自生长机制的对照见 [[双环知识飞轮]]。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -74,3 +81,6 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-15-摘要]] - 2026-09-15 agent 工具化 + RSI 热点趋势信号
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
+- [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）
+- [[Harness自进化]] - 演化对象从权重到 harness
+- [[自进化测量标尺]] - 测「进化了没有」的三把尺
