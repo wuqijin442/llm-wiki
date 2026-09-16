@@ -5,6 +5,9 @@
 .obsidian/plugins/*/data.json
 .obsidian/plugins/*/.cache
 
+# WorkBuddy 内部状态（会话记忆 / 自动化配置 / 日志）——严禁入库
+.workbuddy/
+
 # 系统
 .DS_Store
 Thumbs.db
