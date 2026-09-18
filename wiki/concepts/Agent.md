@@ -9,13 +9,14 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-16
+updated: 2026-09-18
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-14]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-15]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-16]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-18]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -85,6 +86,17 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 单 agent 能力 → 底座/工具层 → 自我演化 → 生产印证，是本库 [[Agent]] 趋势观察（09-14 → 09-15 → 09-16）的主线。
 
+### 每日素材信号（2026-09-18）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-18-摘要]]）把主线从「harness 能不能演化」推进到「**演化出来的 harness 是否可靠、记忆撤销是否彻底**」——这是 09-16「生产印证」之后的必然追问：
+
+- **工具/记忆可靠性成为最密集议题**：GitHub 工具层延续冲榜（`cloudflare/security-audit-skill`、`alibaba/open-code-review`、`addyosmani/agent-skills`、`affaan-m/ECC`）；CSDN 从实战侧补「AI Agent 越界之后：为什么只有沙箱还不够」「Agent 工具设计原则」；WebSearch 热点补充集中出现 `PRISM` / `ExecCritic` / `MERIT` / `Agents Trust Tools Too Much` / `ResidualAuth` / `SchemeArena` 等——指向同一结论：agent 不可靠的根因常在**工具回传不可信、记忆未真正撤销、权限边界未硬校验**，而非模型本身。
+- **记忆撤销失效被量化**：`ResidualAuth` / `Revoked but Still Authoritative` 显示写入已撤销政策后，5 种记忆系统无一种默认完整执行撤销；`MERIT` 显示向量检索遇更新事实波动大、近半正确信息未被执行——直接坐实 [[Harness自进化]] 中"memory 是被演化、也需要被约束的 surface"。
+- **自维护 Wiki 开源再印证**：`Tencent/WeKnora`（自维护 Wiki）、`Agents-Flex`（Java 框架显式支持 LLM Wiki）延续 09-16 的"自生长知识库可落地"证据链。
+- **知识库会腐坏**：CSDN「知识库防腐坏」把衰减讲成需要巡检/软下架/灰度回滚的运维问题，关联 [[LLM-Wiki-vs-RAG]]。
+
+> 主线续接：单 agent 能力 → 底座/工具层 → 自我演化 → 生产印证 → **可靠性/防腐坏（09-18）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -92,6 +104,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-14-摘要]] - 2026-09-14 agent 工具化冲榜趋势信号
 - [[每日AI素材-2026-09-15-摘要]] - 2026-09-15 agent 工具化 + RSI 热点趋势信号
 - [[每日AI素材-2026-09-16-摘要]] - 2026-09-16 自维护 Wiki 开源印证 + agent harness 工具 + Plan Injection 安全议题
+- [[每日AI素材-2026-09-18-摘要]] - 2026-09-18 agent 工具/记忆可靠性 + 自维护 Wiki 再印证 + 知识库防腐坏 + 可控 RSI
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）

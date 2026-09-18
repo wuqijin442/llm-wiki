@@ -2,6 +2,18 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-18] ingest | 每日AI素材-2026-09-18（四渠道头部采集 + 增量入库）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-18.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；HuggingFace papers 本环境 fetch failed → 改用 WebSearch 补 5 条；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 21 篇（排除 `80-Templates` 与 `articles/README.md`）；20 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（经核对 `每日AI素材-2026-09-14/15/16` 均已引用、`2026-09-18` 尚未引用，确认待消化集合 = 1）。**注：09-17 无采集运行记录，存在一天空缺；因 Trending/热榜为当日口径、隔日不可复现，本期只补 09-18，不回填 09-17**
+- 新建：[[每日AI素材-2026-09-18-摘要]]（摘要页：四大信号——agent 工具/记忆可靠性集群、自维护 Wiki 开源再印证、知识库防腐坏、可控 RSI（书生·星河）；含待核实 6 项）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-18）」H3 子节，规避已有 09-16 趋势节 H2；相关链接 +1；updated→2026-09-18，status 维持 growing）
+- 更新：[[Harness自进化]]（「与相关概念的边界」节补「外部印证（2026-09-18）」出链，WeKnora/Agents-Flex 再印证自维护 Wiki + ECC/PRISM/MERIT/ResidualAuth 量化「memory/tools 不可靠」失败面；相关链接 +3；updated→2026-09-18，status 维持 seed）
+- 台账：index.md（37→38 页、素材 20→21）、log.md、growth.md、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md（外部印证）；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15/16 趋势节与 09-16 信号 H3 → 新增 09-18 信号沿用 H3 子节规避重复 H2
+- 待核实：GitHub stars today 为页面声称值未独立核验（ECC 261K 疑似含 fork/镜像计数存疑）；Gitee 列表为存量热度非当日趋势；arXiv 2609.xxxxx ID 未独立核验；PRISM/ExecCritic/MERIT/ResidualAuth/SchemeArena 来自 cnblogs 媒体日报未对照原文；书生·星河数值来自新浪财经未对照论文；WeKnora/Agents-Flex 与本项目「自生长」属类比非同一来源
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-16] ingest | 每日AI素材-2026-09-16（四渠道头部采集 + 增量入库）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-16.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；HuggingFace papers 本环境 fetch failed → 改用 WebSearch 补 5 条；raw 既有文件零改动）

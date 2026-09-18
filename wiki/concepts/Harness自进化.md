@@ -11,7 +11,7 @@ tags:
   - 方法论
 category: concepts
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-18
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: 自改进的重心从模型权重移到 harness（prompts/memory/skills/tools/控制循环）；用四相位 episode 与事务契约让 harness 安全地改写自己。
@@ -76,6 +76,7 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - **LLM Wiki 自生长**（`[[自生长知识库实战-苍何]]`、`[[双环知识飞轮]]`）：演化对象是**知识库编译产物**，主体是维护库的 agent+人；Harness 自进化的演化对象是**agent 自己的运行脚手架**。都关心「留下了什么结构化变化」，但被测物不同。
 - **RSI（递归自我改进）**：见 `[[每日AI素材-2026-09-15-摘要]]`；Proteus 提供的是其中 harness 路径的实验仪器，不是完整 RSI 理论。
 - **外部印证（2026-09-16）**：`[[每日AI素材-2026-09-16-摘要]]` 中 `Tencent/WeKnora`（自维护 Wiki）、`Agentic Societies Need a Social Harness`、`affaan-m/ECC`（agent harness 优化系统）从生产/社区侧印证「演化对象=harness」的判断——自维护知识库、社会协调 harness、harness 性能优化都已是可落地形态。
+- **外部印证（2026-09-18）**：`[[每日AI素材-2026-09-18-摘要]]` 从两个方向补强——① `Tencent/WeKnora`（自维护 Wiki）与 `Agents-Flex`（Java 框架**显式支持 LLM Wiki**）再次印证"自生长知识库"已是社区框架能力，不止个人方法论；② `affaan-m/ECC` 把 harness 优化系统化为 skills/instincts/memory/security 的成品，且当日热点补充（PRISM/ExecCritic/MERIT/ResidualAuth/SchemeArena）量化了"memory/tools 不可靠"这一 harness 必须被测量和约束的失败面。
 
 ## 参考实例
 
@@ -89,3 +90,6 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - `[[Agent]]` - harness 作为 2026 竞争焦点的语境
 - `[[自愈闭环设计]]` - 另一种「agent 改自己」的安全通道
 - `[[AI智能体工程方法论]]` - 工程侧原则对照
+- `[[每日AI素材-2026-09-18-摘要]]` - 自维护 Wiki 再印证 + harness 可靠性失败面量化
+- `[[LLM-Wiki-vs-RAG]]` - 知识库防腐坏：编译停摆则网络腐坏
+- `[[自生长知识库实战-苍何]]` - 自生长知识库的方法论原型
