@@ -2,6 +2,19 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-19 晚] ingest | 每日AI素材-2026-09-19-晚（四渠道头部采集 + 增量入库，同日第 2 批）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-19-晚.md`（本自动化第 0 步采集产出；同日晚间第 2 批；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点补充；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 23 篇（排除 `80-Templates` 与 `articles/README.md`）；22 篇已被引用，本次新建晚间每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）。注：同日早间 `每日AI素材-2026-09-19.md` 已入库，晚间批次为同日第 2 批，落 `每日AI素材-2026-09-19-晚.md` 以避免覆盖已消化文件、遵守 raw 只读纪律
+- 新建：[[每日AI素材-2026-09-19-晚-摘要]]（摘要页：五大信号——harness 成本被单独度量（HarnessTax 实证，同一模型三套 harness 成功率不变、成本差最高 5x）、coding-agent/skills 生态延续霸榜 + AGENTS.md 规范化、微型/边缘端自动化基础模型（needle/Needle 3/Edge0）、多模态/视频推理优化（vLLM+NVIDIA/VAE/FPS）、AI 治理合规升温（加州 kill switch/弗州放缓/三巨头自监管/苹果防伪）；含待核实 7 项）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-19-晚）」H3 子节，沿用 H3 规避重复 H2；相关链接 +1；updated→2026-09-19，status 维持 growing）
+- 更新：[[Harness自进化]]（frontmatter +1 source；「与相关概念的边界」节补「外部印证（2026-09-19-晚）」——HarnessTax + arXiv 2609.20474 量化 harness 价值 + byobot harness tax 概念，把「演化对象=harness」从组件级科学化推进到成本侧度量；相关链接 +1；updated→2026-09-19，status 维持 seed）
+- 台账：index.md（39→40 页、素材 22→23）、log.md、growth.md、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15/16 趋势节与 09-16/18/19 信号 H3 → 新增 09-19-晚 信号沿用 H3 子节规避重复 H2
+- 意外与未解问题：① CSDN hot-rank 接口本轮仍仅返回 nickName+viewCount（标题/链接/hotValue 全缺失），WebSearch 按作者+关键词补标题未命中（返回其历史博客非本日热榜）→ 按约定降级记「标题未取到」，CSDN 渠道本日信息量受限；② GitHub/Gitee/arXiv 列表与早间同口径（GitHub「今日 Star」为当日累计、Gitee 为存量热度、arXiv 仍为 09-18 批次），本轮真正新增信号来自 WebSearch 当日热点；③ 同日第 2 批致素材文件名带 `-晚` 后缀，索引与摘要页已显式标注「同日第 2 批」防歧义
+- 待核实：GitHub/Gitee/arXiv 数值为页面声称值未独立核验；HarnessTax 为 BYOBot 媒体转述未对照原始论文与基准数据；GLM-5.3-Flash/Qwen3.8 Omni Flash 为媒体口径未对照官方；加州/弗州 AI 行政令为新闻报道未对照政府原文；Cactus Needle 3/AutoArk Edge0 延迟吞吐数字来自 AGI HUNT 日报未对照仓库 README 或基准；CSDN 标题未取到
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-19] ingest | 每日AI素材-2026-09-19（四渠道头部采集 + 增量入库）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-19.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；raw 既有文件零改动）

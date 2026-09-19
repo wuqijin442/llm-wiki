@@ -18,6 +18,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-16]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-18]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -109,6 +110,18 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：… → 可靠性/防腐坏（09-18）→ **组件级科学化（09-19）**。
 
+### 每日素材信号（2026-09-19-晚）
+
+同日晚间批次（见 [[每日AI素材-2026-09-19-晚-摘要]]）把「harness 组件级科学化」主线推进到「**harness 成本被单独度量**」，并补上两条早间未覆盖的新信号（边缘自动化模型 / 多模态推理优化）：
+
+- **harness 成本实证落地**：`HarnessTax`（UC Berkeley + Arena，09-16）显示同一模型在 Claude Code / Codex CLI / Pi 三套 harness 上 SWE-bench Lite + Terminal-Bench 2.0 **成功率几乎不变、成本差最高 5x**，根因是 harness 每请求输入 token 量（~27k / ~15k / ~2.6k）。「harness tax」是 09-19 早间「harness 可拆解测量」主张的**成本侧补完**——不只测「准不准」，还要测「每调用花多少」。
+- **coding-agent / skills 生态延续霸榜**：GitHub 当日头名 `cloudflare/security-audit-skill`（+3,162 today）、`addyosmani/agent-skills`（+547）、`anthropics/claude-code 2.1.277 支持 AGENTS.md 回退`、`MiniMax Code CLI` 开源（MIT）——延续「竞争焦点在底座/工具层」主线，并出现「AGENTS.md 作为跨工具项目指令规范」的生产侧同构（关联本库 `AGENTS.md`）。
+- **微型/边缘端自动化基础模型（新信号）**：`cactus-compute/needle`（2-bit、8–29MB，跑 MCU/手机）、`Cactus Needle 3`（Raspberry Pi 5 上 4k tok/s decode）、`AutoArk Edge0`（35B 跑 SSD Mac mini，3GB 活跃内存 20.4 tok/s）——自动化模型开始下沉到消费级/嵌入式硬件。
+- **多模态/视频推理优化（新信号）**：`vLLM + 英伟达 PyNvVideoCodec` 硬件视频解码、`Kijai MiniMax-H3 VAE` 在 RTX 3060 提吞吐、`LingBot-World 2.0 1.3B` 单卡 6→16 FPS。
+- **AI 治理/合规升温（新信号）**：加州 `AI kill switch` 行政令、弗州数据中心放缓 + AI 任务组、三巨头自建自监管体、苹果参考图像防伪——治理从「模型行为」前移到「电力/基础设施/审计」，关联 [[iOS内部分发与App Store合规]] 的「合规即工程约束」。
+
+> 主线续接：… → 组件级科学化（09-19）→ **成本侧度量 + 边缘/多模态/治理外溢（09-19 晚）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -118,6 +131,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-16-摘要]] - 2026-09-16 自维护 Wiki 开源印证 + agent harness 工具 + Plan Injection 安全议题
 - [[每日AI素材-2026-09-18-摘要]] - 2026-09-18 agent 工具/记忆可靠性 + 自维护 Wiki 再印证 + 知识库防腐坏 + 可控 RSI
 - [[每日AI素材-2026-09-19-摘要]] - 2026-09-19 harness 组件级科学化 + skill 安全审计化 + OpenWiki 第三次印证
+- [[每日AI素材-2026-09-19-晚-摘要]] - 2026-09-19 晚 harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）

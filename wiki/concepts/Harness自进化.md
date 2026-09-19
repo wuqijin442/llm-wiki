@@ -14,6 +14,7 @@ created: 2026-09-16
 updated: 2026-09-19
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
 description: 自改进的重心从模型权重移到 harness（prompts/memory/skills/tools/控制循环）；用四相位 episode 与事务契约让 harness 安全地改写自己。
 status: seed
 confidence: 高
@@ -77,6 +78,7 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - **RSI（递归自我改进）**：见 `[[每日AI素材-2026-09-15-摘要]]`；Proteus 提供的是其中 harness 路径的实验仪器，不是完整 RSI 理论。
 - **外部印证（2026-09-16）**：`[[每日AI素材-2026-09-16-摘要]]` 中 `Tencent/WeKnora`（自维护 Wiki）、`Agentic Societies Need a Social Harness`、`affaan-m/ECC`（agent harness 优化系统）从生产/社区侧印证「演化对象=harness」的判断——自维护知识库、社会协调 harness、harness 性能优化都已是可落地形态。
 - **外部印证（2026-09-18）**：`[[每日AI素材-2026-09-18-摘要]]` 从两个方向补强——① `Tencent/WeKnora`（自维护 Wiki）与 `Agents-Flex`（Java 框架**显式支持 LLM Wiki**）再次印证"自生长知识库"已是社区框架能力，不止个人方法论；② `affaan-m/ECC` 把 harness 优化系统化为 skills/instincts/memory/security 的成品，且当日热点补充（PRISM/ExecCritic/MERIT/ResidualAuth/SchemeArena）量化了"memory/tools 不可靠"这一 harness 必须被测量和约束的失败面。
+- **外部印证（2026-09-19-晚）**：`[[每日AI素材-2026-09-19-晚-摘要]]` 把「演化对象=harness」从「组件级科学化」推进到「**成本侧度量**」——`HarnessTax`（UC Berkeley + Arena）以 SWE-bench Lite + Terminal-Bench 2.0 实证：同一模型在三套 harness（Claude Code / Codex CLI / Pi）上**成功率几乎不变、成本差最高 5x**，根因是 harness 每请求输入 token 量（~27k / ~15k / ~2.6k）；同日 arXiv 2609.20474《How Do Agent Harnesses Create Value?》从规划信息（planning information）与释放控制（release control）角度量化 harness 价值来源。这与本概念「harness 可测量、需被测量（不只测模型）」主张同构，也为 `[[自进化测量标尺]]` 提供真实度量动机：先量清 harness 的 token 开销与价值贡献，再谈演化。
 
 ## 参考实例
 
@@ -92,5 +94,6 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - `[[AI智能体工程方法论]]` - 工程侧原则对照
 - `[[每日AI素材-2026-09-18-摘要]]` - 自维护 Wiki 再印证 + harness 可靠性失败面量化
 - `[[每日AI素材-2026-09-19-摘要]]` - harness 成为组件级研究对象 + OpenWiki 第三次印证
+- `[[每日AI素材-2026-09-19-晚-摘要]]` - harness 成本度量(HarnessTax) + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
 - `[[LLM-Wiki-vs-RAG]]` - 知识库防腐坏：编译停摆则网络腐坏
 - `[[自生长知识库实战-苍何]]` - 自生长知识库的方法论原型
