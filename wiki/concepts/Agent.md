@@ -9,7 +9,7 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-18
+updated: 2026-09-19
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
@@ -17,6 +17,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-15]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-16]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-18]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-19]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -97,6 +98,17 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：单 agent 能力 → 底座/工具层 → 自我演化 → 生产印证 → **可靠性/防腐坏（09-18）**。
 
+### 每日素材信号（2026-09-19）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-19-摘要]]）把「harness 是护城河」推进到「**harness 是可拆解测量的科学对象**」：
+
+- **harness 论文密集群**：arXiv 当日头部同时出现 `Harness Design for Coding Agents`（组件级实证：固定执行循环，单独变换 planning/action space/context management）、`SoL-Pi`（harness 层递归 auto-research loops）、`How Do Agent Harnesses Create Value?`——护城河被**拆开量化**，从口号变成可复现实验。
+- **skill 生态走向安全审计化**：当日 Trending 头名 `cloudflare/security-audit-skill`（+3,019 today）是给 agent 产出做验证的 skill；`SkillAA` 给 skill-graph 更新加定向验证与回滚——skill 治理开始具备事务契约特征，关联 [[AI智能体分权治理]]。
+- **自维护 Wiki 第三次外部印证**：LangChain `OpenWiki`（Credit Genie 知识保鲜 + Self-Correcting Memory）续接 WeKnora（09-16）→ Agents-Flex（09-18）证据链，「知识库能自己长且需自修正」获得三源独立印证。
+- **agent 工作负载反向塑造底座**：`DeepSeek-V4.1-Flash` decode 16B / prefill 8B 不对称激活、`Atria Dawn Preview` 直接以 agentic 命名旗舰——底座架构取舍由 agent 场景驱动。
+
+> 主线续接：… → 可靠性/防腐坏（09-18）→ **组件级科学化（09-19）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -105,6 +117,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-15-摘要]] - 2026-09-15 agent 工具化 + RSI 热点趋势信号
 - [[每日AI素材-2026-09-16-摘要]] - 2026-09-16 自维护 Wiki 开源印证 + agent harness 工具 + Plan Injection 安全议题
 - [[每日AI素材-2026-09-18-摘要]] - 2026-09-18 agent 工具/记忆可靠性 + 自维护 Wiki 再印证 + 知识库防腐坏 + 可控 RSI
+- [[每日AI素材-2026-09-19-摘要]] - 2026-09-19 harness 组件级科学化 + skill 安全审计化 + OpenWiki 第三次印证
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）

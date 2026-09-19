@@ -2,6 +2,19 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-19] ingest | 每日AI素材-2026-09-19（四渠道头部采集 + 增量入库）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-19.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 22 篇（排除 `80-Templates` 与 `articles/README.md`）；21 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）
+- 新建：[[每日AI素材-2026-09-19-摘要]]（摘要页：三大信号——harness 成为组件级研究对象（arXiv 密集群：2609.20804 组件级实证 / SoL-Pi / Harness Value + EurekAgent 环境工程）、skill 生态走向安全审计化（security-audit-skill 当日头名 + SkillAA 回滚）、自维护 Wiki 第三次外部印证（LangChain OpenWiki：WeKnora→Agents-Flex→OpenWiki 证据链）；含待核实 8 项）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-19）」H3 子节，沿用 H3 规避重复 H2；相关链接 +1；updated→2026-09-19，status 维持 growing）
+- 更新：[[Harness自进化]]（「与相关概念的边界」节补「外部印证（2026-09-19）」——harness 组件级实证三篇 + EurekAgent + SkillAA 事务化 + OpenWiki 第三印证；相关链接 +1；updated→2026-09-19，status 维持 seed）
+- 台账：index.md（38→39 页、素材 21→22）、log.md、growth.md、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md（外部印证）；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15 趋势 H2 与 09-16/18 信号 H3 → 新增 09-19 信号沿用 H3 子节规避重复 H2
+- 意外与未解问题：① CSDN hot-rank 接口本轮仅返回 nickName+viewCount（标题/链接/hotValue 全缺失），WebSearch 补标题未命中 → 按约定降级记「标题未取到」，CSDN 渠道本日信息量受限；② ECC 总 Star 262K 存疑连续第三日未消除，建议下轮 refresh 用 GitHub API 核实真实值；③ OpenWiki 两篇仅标题级信息，正文未读，落地深度待核
+- 待核实：arXiv 2609.xxxxx 编号/标题未逐条核验；HuggingFace upvotes 来自第三方博客未对照；Atria Dawn Preview 744B/40B/MIT 数值来自 miraflow.ai 日报未对照论文；EurekAgent <$11、Ask the Tool TTFT p90 -20.7% 未对照原文；GitHub stars today 为页面声称值（ECC 262K 存疑）；Gitee 为存量热度口径非当日趋势；OpenWiki 案例正文细节未读
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-18] ingest | 每日AI素材-2026-09-18（四渠道头部采集 + 增量入库）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-18.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 热点补充；HuggingFace papers 本环境 fetch failed → 改用 WebSearch 补 5 条；raw 既有文件零改动）

@@ -11,7 +11,7 @@ tags:
   - 方法论
 category: concepts
 created: 2026-09-16
-updated: 2026-09-18
+updated: 2026-09-19
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: 自改进的重心从模型权重移到 harness（prompts/memory/skills/tools/控制循环）；用四相位 episode 与事务契约让 harness 安全地改写自己。
@@ -91,5 +91,6 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - `[[自愈闭环设计]]` - 另一种「agent 改自己」的安全通道
 - `[[AI智能体工程方法论]]` - 工程侧原则对照
 - `[[每日AI素材-2026-09-18-摘要]]` - 自维护 Wiki 再印证 + harness 可靠性失败面量化
+- `[[每日AI素材-2026-09-19-摘要]]` - harness 成为组件级研究对象 + OpenWiki 第三次印证
 - `[[LLM-Wiki-vs-RAG]]` - 知识库防腐坏：编译停摆则网络腐坏
 - `[[自生长知识库实战-苍何]]` - 自生长知识库的方法论原型
