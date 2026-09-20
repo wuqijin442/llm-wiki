@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-09-20 | 内容页：41（33 seed / 8 growing） | 元页面：5 | 素材总数：24
+> 最后更新：2026-09-20 | 内容页：42（34 seed / 8 growing） | 元页面：5 | 素材总数：25
 
 本索引是 LLM 的内容导向导航入口。每次 ingest / query / lint / publish 操作后都会更新。
 
@@ -53,6 +53,7 @@
 - [[每日AI素材-2026-09-19-摘要]] - 四渠道头部 AI 素材摘要，harness 组件级科学化 + skill 安全审计化 + OpenWiki 第三印证 (2026-09-19)
 - [[每日AI素材-2026-09-19-晚-摘要]] - 四渠道晚间头部 AI 素材摘要，harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规 (2026-09-19)
 - [[每日AI素材-2026-09-20-摘要]] - 四渠道头部 AI 素材摘要（每条均带可点击链接）；harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR) (2026-09-20)
+- [[每日AI素材-2026-09-20-晚-摘要]] - 四渠道晚间头部 AI 素材摘要（每条带可点击链接）；coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复 + 推理路由经济学/REALM 补强 harness 成本度量 (2026-09-20 晚)
 - [[Proteus-自进化harness框架-摘要]] - 仓库精读：四相位 episode、可移除 disposition、三把测量尺 (2026-09-16)
 
 ## Comparisons

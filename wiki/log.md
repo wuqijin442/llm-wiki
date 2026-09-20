@@ -2,6 +2,19 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-20 晚] ingest | 每日AI素材-2026-09-20-晚（四渠道头部采集 + 增量入库，每条附可点击链接，同日第 2 批）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-20-晚.md`（本自动化第 0 步采集产出；同日早间 `每日AI素材-2026-09-20.md` 已入库，本批为 21:00 自动化运行，文件名带 `-晚` 遵守 raw 只读纪律、避免覆盖已消化文件；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日/近期热点补充；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 25 篇（排除 `80-Templates` 与 `articles/README.md`）；24 篇已被引用，本次新建晚间每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）。注：CSDN 热榜接口本轮**恢复正常**（标题/链接/热度/浏览量齐全），与连续多日降级不同
+- 新建：[[每日AI素材-2026-09-20-晚-摘要]]（摘要页：五大信号——coding-agent/harness 安全审计霸榜延续（ECC +1,012 / security-audit-skill +3,155 / agent-skills +556 / claude-code +483）、computer-use 2.0（cua +859）与 Generative UI（json-render +585）新形态、Gitee Agents-Flex 把 LLM Wiki 列为内置能力（第三次社区框架印证）、CSDN 恢复且 Agent 安全护栏 + 开源/开权重控制权之争成中文热点、WebSearch 补推理路由经济学(2609.15992)/REALM 记忆再巩固(2609.16055)/交互知识窄化补强 harness 成本度量与 RAG；含待核实 4 项；正文与外链均为可点击 Markdown）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-20 晚）」H3 子节；相关链接 +1；updated→2026-09-20，status 维持 growing）
+- 更新：[[Harness自进化]]（frontmatter +1 source；「与相关概念的边界」节补「外部印证（2026-09-20 晚）」——推理路由经济学(2609.15992) 把 HarnessTax 成本度量推进到路由层 + REALM(2609.16055) 记忆作为演化生命周期强化 memory surface + Agents-Flex 把 LLM Wiki 列为内置；相关链接 +1；updated→2026-09-20，status 维持 seed）
+- 台账：index.md（41→42 页、素材 24→25）、log.md、growth.md、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15 趋势节与 09-16/18/19/19晚/09-20 信号 H3 → 新增 09-20-晚 信号沿用 H3 子节规避重复 H2
+- 意外与未解问题：① CSDN 热榜接口本轮恢复正常（标题/链接/热度/浏览量齐全），与连续多日仅返 nickName+viewCount 降级不同，但数据连续性仍存疑（此前多日缺失、本日单点恢复无法证明历史连续性）；② GitHub/Gitee/arXiv 列表与早间同口径（GitHub「今日 Star」为当日累计、Gitee 为存量热度、arXiv 仍为 2609.xxxxx 批次），本轮真正新增信号来自 WebSearch 近期热点补充（09-16/09-17 简报）；③ 同日第 2 批致素材文件名带 `-晚` 后缀，索引与摘要页已显式标注「同日第 2 批」防歧义
+- 待核实：GitHub/Gitee/arXiv 数值为页面声称值未独立核验；WebSearch 补充条目取自 09-16/09-17 第三方简报与 arXiv/Springer/HuggingFace 原文（非当日首发），数值与结论未逐条对照原始论文；CSDN 接口数据连续性存疑
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-20] ingest | 每日AI素材-2026-09-20（四渠道头部采集 + 增量入库，每条附可点击链接）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-20.md`（本自动化第 0 步采集产出；**纪律升级：每条目均附可点击链接**，写入 `skills/llm-wiki/SKILL.md`「采集链接纪律」小节；GitHub 用 owner/repo 合成 URL、Gitee 取页面项目链接、arXiv 合成 abs 链接、WebSearch 补充逐条带来源 URL；CSDN 接口仅返 nickName+viewCount 再次降级、不编造链接）

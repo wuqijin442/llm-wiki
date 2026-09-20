@@ -20,6 +20,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-19]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-20-晚]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -135,6 +136,18 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：… → 成本侧度量 + 边缘/多模态/治理外溢（09-19 晚）→ **世界模型 + harness 设计密集实证 + 概率即输出（09-20）**。
 
+### 每日素材信号（2026-09-20 晚）
+
+同日晚间批次（见 [[每日AI素材-2026-09-20-晚-摘要]]）把「coding-agent / harness 安全审计霸榜」主线同日强化，并补上两条早间未覆盖的新信号（computer-use / Generative UI 新形态、开源治理与 Agent 安全护栏的中文社区升温）：
+
+- **coding-agent / harness / 安全审计 skill 同屏霸榜（同日强化）**：GitHub 当晚同屏出现 [affaan-m/ECC](https://github.com/affaan-m/ECC)（今日 +1,012）、[cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)（今日 +3,155）、[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)（+556）、[anthropics/claude-code](https://github.com/anthropics/claude-code)（+483）、[coder/coder](https://github.com/coder/coder)（+402）——延续「竞争焦点在底座/工具层」主线，且以安全/审计为卖点，关联 [[AI智能体分权治理]]。
+- **computer-use 2.0 与 Generative UI 新形态**：[trycua/cua](https://github.com/trycua/cua)（Scale computer-use 2.0，今日 +859）把 agent 的 action surface 从写代码外溢到「操控桌面/跨系统执行」；[vercel-labs/json-render](https://github.com/vercel-labs/json-render)（The Generative UI framework，今日 +585）代表「生成式界面」范式。
+- **Gitee Agents-Flex 把 LLM Wiki 列为内置能力**：[Agents-Flex/Agents-Flex](https://gitee.com/agents-flex/agents-flex)（JAVA 框架、Gitee 2.9K★、3天前更新）功能清单显式包含「LLM Wiki」——「自生长知识库」成为社区框架级能力的**第三次独立印证**（WeKnora 09-16 → Agents-Flex 09-18 → 本次 Gitee 热度再确认），关联 [[自生长知识库实战-苍何]]、[[双环知识飞轮]]。
+- **CSDN 接口恢复 + 中文社区热点**：[22秒攻击窗口下的防御重构：Agent 安全护栏实践](https://blog.csdn.net/CC1991_/article/details/165754156)（热度 9346）与[开源 vs 开权重控制权之争](https://blog.csdn.net/weixin_74809706/article/details/164885385)（热度 14953）反映 Agent 安全与开源治理升温，关联 [[AI智能体工程方法论]]「合规即工程约束」。
+- **WebSearch 补充推进成本度量主线**：[Inference routing economics（arXiv 2609.15992）](https://arxiv.org/abs/2609.15992) 把「harness tax」从单 harness 对比推进到**推理路由层**（阈值调度廉价/贵模型降本）；[REALM（2609.16055）](https://arxiv.org/abs/2609.16055) 把记忆当作持续演化的生命周期，强化本库 [[Harness自进化]] 的 memory surface；[Interaction-Induced Knowledge Narrowing](https://link.springer.com/article/10.1007/s44163-026-02101-6) 关联 [[RAG]]。
+
+> 主线续接：… → 世界模型 + harness 设计密集实证 + 概率即输出（09-20）→ **computer-use/Generative UI 新形态 + 推理路由/记忆再巩固补强成本度量（09-20 晚）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -146,6 +159,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-19-摘要]] - 2026-09-19 harness 组件级科学化 + skill 安全审计化 + OpenWiki 第三次印证
 - [[每日AI素材-2026-09-19-晚-摘要]] - 2026-09-19 晚 harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
 - [[每日AI素材-2026-09-20-摘要]] - 2026-09-20 harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR)
+- [[每日AI素材-2026-09-20-晚-摘要]] - 2026-09-20 晚 coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI 新形态 + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复且 Agent 安全护栏成中文热点 + 推理路由经济学/记忆再巩固补强 harness 成本度量
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）
