@@ -2,6 +2,16 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-20] ingest | 每日AI素材-2026-09-20（四渠道头部采集 + 增量入库，每条附可点击链接）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-20.md`（本自动化第 0 步采集产出；**纪律升级：每条目均附可点击链接**，写入 `skills/llm-wiki/SKILL.md`「采集链接纪律」小节；GitHub 用 owner/repo 合成 URL、Gitee 取页面项目链接、arXiv 合成 abs 链接、WebSearch 补充逐条带来源 URL；CSDN 接口仅返 nickName+viewCount 再次降级、不编造链接）
+- 差异检测：raw/ 知识素材共 24 篇（排除 `80-Templates` 与 `articles/README.md`）；23 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）
+- 新建：[[每日AI素材-2026-09-20-摘要]]（摘要页：五大信号——harness 设计层实证（arXiv 2609.20804 / NVIDIA SoL-Pi / C2C）、世界模型 JEPA-Anything、边缘/微型自动化模型、概率即输出 Jev/Von、医疗影像开源 DAMORADAR；含待核实 4 项；正文与外链均为可点击 Markdown）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-20）」H3 子节；相关链接 +1；updated→2026-09-20，status 维持 growing）
+- 更新：[[Harness自进化]]（frontmatter +1 source；「与相关概念的边界」节补「外部印证（2026-09-20）」——2609.20804 / SoL-Pi / C2C 把 harness 可测量主线推进到设计层实证密集化；相关链接 +1；updated→2026-09-20，status 维持 seed）
+- 台账：index.md（40→41 页、素材 23→24）、log.md、growth.md、lifecycle.md
+- 待核实：GitHub/Gitee/arXiv 数值为页面声称值未独立核验；AGI HUNT / 今日头条为媒体口径未对照原文；CSDN 接口字段缺失该渠道降级
+
 ## [2026-09-19 晚] ingest | 每日AI素材-2026-09-19-晚（四渠道头部采集 + 增量入库，同日第 2 批）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-19-晚.md`（本自动化第 0 步采集产出；同日晚间第 2 批；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点补充；raw 既有文件零改动）

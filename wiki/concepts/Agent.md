@@ -9,7 +9,7 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-19
+updated: 2026-09-20
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
@@ -19,6 +19,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-18]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -122,6 +123,18 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：… → 组件级科学化（09-19）→ **成本侧度量 + 边缘/多模态/治理外溢（09-19 晚）**。
 
+### 每日素材信号（2026-09-20）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-20-摘要]]）把「harness 组件级科学化」主线推进到「**世界模型与 harness 设计同周密集实证**」，并延续 coding-agent/skills 生态霸榜：
+
+- **harness 设计实证再补强**：[arXiv:2609.20804《An Empirical Study of Harness Design for Coding Agents》](https://arxiv.org/abs/2609.20804) 用固定执行循环、单独变换 planning/action space/context management 的组件级实验，把「harness 护城河」落成可复现实验；[NVIDIA SoL-Pi](https://agihunt.info/en/daily/2026-09-20?f=dr) 在 harness 层跑自研究循环（Action Fusion / Online Context Compact / ObservationPack），宣称约 50% 更少 token、约 33% 更低 API 成本；[C2C（Cache-to-Cache，清华 + 无问芯穹，ICLR 2026）](https://agihunt.info/en/daily/2026-09-20?f=dr) 从多 agent 通信中去掉文本、用 Neural Fuser 嫁接 KV-cache。
+- **coding-agent / skills 生态连续霸榜**：GitHub 当日头名 [cloudflare/security-audit-skill](https://github.com/cloudflare/security-audit-skill)（+3,162 today）、[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)（+547）、[anthropics/claude-code](https://github.com/anthropics/claude-code)、[cactus-compute/needle](https://github.com/cactus-compute/needle)（+207，2-bit 微型自动化模型）——延续「竞争焦点在底座/工具层」主线。
+- **世界模型 / 通用表征新信号**：[JEPA-Anything（arXiv:2609.20800）](https://agihunt.info/en/daily/2026-09-20?f=dr) 基于 OPF 的域无关世界模型，跨 7 领域把单 JEPA 潜目标拆成可检视互补因子。
+- **概率即输出（JEV 类）新信号**：[TypeSafe Jev](https://agihunt.info/en/daily/2026-09-20?f=dr) 不生成文本只输出概率；[Von（395M）](https://agihunt.info/en/daily/2026-09-20?f=dr) 标榜 CPU 平替——「少 token、低延迟、概率化」成为一类新形态。
+- **医疗影像开源（国内普惠路线）**：[DAMORADAR（达摩院 + 浙一，刊《Science》）](https://www.toutiao.com/article/7687226704070279689/) 单模型覆盖 18 解剖结构、识别 146+ 病症并开源。
+
+> 主线续接：… → 成本侧度量 + 边缘/多模态/治理外溢（09-19 晚）→ **世界模型 + harness 设计密集实证 + 概率即输出（09-20）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -132,6 +145,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-18-摘要]] - 2026-09-18 agent 工具/记忆可靠性 + 自维护 Wiki 再印证 + 知识库防腐坏 + 可控 RSI
 - [[每日AI素材-2026-09-19-摘要]] - 2026-09-19 harness 组件级科学化 + skill 安全审计化 + OpenWiki 第三次印证
 - [[每日AI素材-2026-09-19-晚-摘要]] - 2026-09-19 晚 harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
+- [[每日AI素材-2026-09-20-摘要]] - 2026-09-20 harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR)
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）

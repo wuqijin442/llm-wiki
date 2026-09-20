@@ -57,6 +57,21 @@ Ingest 协议（AGENTS.md §7）：`observe → propose → act → reflect`—�
 
 对维护习惯的注入，走 **§8 可移除 disposition 实验**（单一、有期限、可撤除；到期做结晶判读），不要直接永久改 Schema。
 
+## 采集链接纪律（每日素材必做）
+
+`raw/00-Inbox/每日AI素材-YYYY-MM-DD.md` 中**每一条目都必须附带可点击链接**，做到「点击即达」。缺链接视为采集不完整。
+
+| 渠道 | 链接写法 | 说明 |
+| --- | --- | --- |
+| GitHub Trending | `[owner/repo](https://github.com/owner/repo)` | owner/repo 已知，直接合成规范 URL |
+| Gitee LLM | `[项目名](https://gitee.com/owner/repo)` | 优先取页面项目链接；路径不明按「gitee.com/组织/仓库」最佳努力合成 |
+| CSDN 热榜 | `[标题](文章URL)` | 接口降级取不到标题/链接时记「标题未取到」并留空，不编造 |
+| arXiv cs.AI | `[2609.xxxxx](https://arxiv.org/abs/2609.xxxxx)` | 用编号合成 abs 链接 |
+| WebSearch 热点 | 每条独立带 `来源：<具体URL>` | 不得只写章节级来源，须落到单条 |
+
+- 摘要页（`wiki/summaries/`）引用具体项目/论文时同样用可点击 Markdown 链接，不丢链接。
+- 链接是证据链一环：读者点击应直达原始页面，不得用「见上方来源」含糊指代。
+
 ## 冲突处理
 
 发现不同说法时**不抹平**：保留来源、时间与适用范围（详见 `AGENTS.md` §5）。

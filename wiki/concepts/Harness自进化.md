@@ -11,10 +11,11 @@ tags:
   - 方法论
 category: concepts
 created: 2026-09-16
-updated: 2026-09-19
+updated: 2026-09-20
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
 description: 自改进的重心从模型权重移到 harness（prompts/memory/skills/tools/控制循环）；用四相位 episode 与事务契约让 harness 安全地改写自己。
 status: seed
 confidence: 高
@@ -79,6 +80,7 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - **外部印证（2026-09-16）**：`[[每日AI素材-2026-09-16-摘要]]` 中 `Tencent/WeKnora`（自维护 Wiki）、`Agentic Societies Need a Social Harness`、`affaan-m/ECC`（agent harness 优化系统）从生产/社区侧印证「演化对象=harness」的判断——自维护知识库、社会协调 harness、harness 性能优化都已是可落地形态。
 - **外部印证（2026-09-18）**：`[[每日AI素材-2026-09-18-摘要]]` 从两个方向补强——① `Tencent/WeKnora`（自维护 Wiki）与 `Agents-Flex`（Java 框架**显式支持 LLM Wiki**）再次印证"自生长知识库"已是社区框架能力，不止个人方法论；② `affaan-m/ECC` 把 harness 优化系统化为 skills/instincts/memory/security 的成品，且当日热点补充（PRISM/ExecCritic/MERIT/ResidualAuth/SchemeArena）量化了"memory/tools 不可靠"这一 harness 必须被测量和约束的失败面。
 - **外部印证（2026-09-19-晚）**：`[[每日AI素材-2026-09-19-晚-摘要]]` 把「演化对象=harness」从「组件级科学化」推进到「**成本侧度量**」——`HarnessTax`（UC Berkeley + Arena）以 SWE-bench Lite + Terminal-Bench 2.0 实证：同一模型在三套 harness（Claude Code / Codex CLI / Pi）上**成功率几乎不变、成本差最高 5x**，根因是 harness 每请求输入 token 量（~27k / ~15k / ~2.6k）；同日 arXiv 2609.20474《How Do Agent Harnesses Create Value?》从规划信息（planning information）与释放控制（release control）角度量化 harness 价值来源。这与本概念「harness 可测量、需被测量（不只测模型）」主张同构，也为 `[[自进化测量标尺]]` 提供真实度量动机：先量清 harness 的 token 开销与价值贡献，再谈演化。
+- **外部印证（2026-09-20）**：`[[每日AI素材-2026-09-20-摘要]]` 把「harness 可测量」主线推进到**设计层实证密集化**——① [arXiv:2609.20804《An Empirical Study of Harness Design for Coding Agents》](https://arxiv.org/abs/2609.20804) 用固定执行循环、单独变换 planning/action space/context management 的组件级实验，把「harness 护城河」落成可复现实验；② [NVIDIA SoL-Pi](https://agihunt.info/en/daily/2026-09-20?f=dr) 在 harness 层跑自研究循环（Action Fusion / Online Context Compact / ObservationPack），宣称约 50% 更少 token、约 33% 更低 API 成本；③ [C2C（Cache-to-Cache，清华 + 无问芯穹，ICLR 2026）](https://agihunt.info/en/daily/2026-09-20?f=dr) 从多 agent 通信中去掉文本、用 Neural Fuser 嫁接 KV-cache。三者共同坐实本概念「harness 是组件级可测量、需被测量的科学对象」主张，并为 `[[自进化测量标尺]]` 提供真实度量场景：token 开销、机制存活率、跨层 cache 嫁接效率均可成为 harness 演化的被测 surface。
 
 ## 参考实例
 
@@ -95,5 +97,6 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - `[[每日AI素材-2026-09-18-摘要]]` - 自维护 Wiki 再印证 + harness 可靠性失败面量化
 - `[[每日AI素材-2026-09-19-摘要]]` - harness 成为组件级研究对象 + OpenWiki 第三次印证
 - `[[每日AI素材-2026-09-19-晚-摘要]]` - harness 成本度量(HarnessTax) + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
+- `[[每日AI素材-2026-09-20-摘要]]` - harness 设计层实证(2609.20804/SoL-Pi/C2C) + 世界模型 + 概率即输出 + 医疗影像开源
 - `[[LLM-Wiki-vs-RAG]]` - 知识库防腐坏：编译停摆则网络腐坏
 - `[[自生长知识库实战-苍何]]` - 自生长知识库的方法论原型
