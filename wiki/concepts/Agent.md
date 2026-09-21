@@ -9,7 +9,7 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-20
+updated: 2026-09-21
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
@@ -21,6 +21,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20-晚]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
@@ -148,6 +149,17 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：… → 世界模型 + harness 设计密集实证 + 概率即输出（09-20）→ **computer-use/Generative UI 新形态 + 推理路由/记忆再巩固补强成本度量（09-20 晚）**。
 
+### 每日素材信号（2026-09-21）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-21-摘要]]）把「harness 是护城河」主线推进到「**技能从代码库挖掘成行业共识 + harness 建议随上下文窗口失效 + 技能成为协议级资源 + coding agent 外泄成具体威胁**」：
+
+- **agent 技能从代码库挖掘成共识（三团队独立）**：[CodeMidas（arXiv:2609.22068）](https://arxiv.org/abs/2609.22068) 从开源代码直接合成 23 语言 5,545 个可执行 coding RL 环境（GRPO 训 MiMo-V2.5 使 DeepSWE +11.7%）；[GraphSkillEvo（arXiv:2609.21749）](https://arxiv.org/abs/2609.21749) 用图结构技能 + 进化优化超 SkillOpt；智源 [DisCo/AREX-Skill](https://ima.qq.com/wiki/?shareId=46f5bcd8d0e86361201f2fe35852c35ddf673179f11f1ab332077d95ee9ec7e7) 把 1000 仓库蒸馏成 5000+ 技能（基准最高 +134.3%）。结论：agent 训练稀缺资源是「经验证的环境+技能」，代码库最便宜来源——直接呼应 [[Harness自进化]]「skill 是被演化、也需约束的 surface」。
+- **harness 建议随上下文窗口增长失效（176 设定消融）**：上下文管理在 SWE-Bench 增益从 32k 窗口 35.7 分跌到 128k 窗口 2.7 分——harness 决策须与模型升级绑定再测量节奏，而非一次性设计文档（强化 [[自进化测量标尺]] 须绑定上下文窗口变量）。
+- **Skills over MCP 定稿（SEP-2640 Final）**：agentskills.io 格式以 `skill://` URI 经 MCP 作资源提供（skills/list、skills/get），技能从本地目录变远程可下发，带来供应链后果——与「AGENTS.md 作为跨工具指令规范」同构。
+- **coding agent 数据外泄成具体威胁模型（延续安全审计化）**：智谱 ZCode 每次 prompt 打包完整工作区（含全量 .git 历史）加密上传阿里云 OSS、无 UI 开关；Patronus Scanner 上线 MCP 注入扫描；NIST Plugin4Shell 同周出现——关联 [[意图路由与服务端兜底]]「出口需显式核算」。
+
+> 主线续接：… → computer-use/Generative UI 新形态 + 推理路由/记忆再巩固（09-20 晚）→ **技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + 技能协议化 + 外泄威胁模型（09-21）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -160,8 +172,10 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-19-晚-摘要]] - 2026-09-19 晚 harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规
 - [[每日AI素材-2026-09-20-摘要]] - 2026-09-20 harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR)
 - [[每日AI素材-2026-09-20-晚-摘要]] - 2026-09-20 晚 coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI 新形态 + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复且 Agent 安全护栏成中文热点 + 推理路由经济学/记忆再巩固补强 harness 成本度量
+- [[每日AI素材-2026-09-21-摘要]] - 2026-09-21 agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁模型 + Paper2Agent 论文即可执行 agent
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）
 - [[Harness自进化]] - 演化对象从权重到 harness
 - [[自进化测量标尺]] - 测「进化了没有」的三把尺
+- [[GitHub-AI周报2026-08-09]] - 2026-08-09 GitHub 全赛道周报（技能层占增量 50% / 本地推理双雄趋势）

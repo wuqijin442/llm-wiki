@@ -10,7 +10,7 @@ tags:
   - 智能体
 category: entities
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-21
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: MIT 开源的 harness 自进化实验框架：任意 agent 接入后自我重写，用结构/行为/结晶三把尺测量变化。
@@ -52,9 +52,9 @@ Run config → 框架组相位提示 → HarnessAdapter.run_episode → harness/
 ## 核心对象
 
 - `Surface`：可编辑持久面，**以数据声明**，测量层零硬编码
-- `Disposition`：单一可移除的 action-preference 扰动（见 `[[自进化测量标尺]]`）
+- `Disposition`：单一可移除的 action-preference 扰动（见 [[自进化测量标尺]]）
 - `GoalConfig`：目标/无目标/多目标 × HIDDEN/OBSERVE × accept_reject
-- Episode：`observe → propose → act → reflect`（见 `[[Harness自进化]]`）
+- Episode：`observe → propose → act → reflect`（见 [[Harness自进化]]）
 
 ## 设计要点（读代码时印象最深的）
 
@@ -75,9 +75,9 @@ proteus check --harness my.adapter:Cls --episode
 
 ## 相关
 
-- `[[Harness自进化]]` — 核心概念（演化对象从权重到 harness）
-- `[[自进化测量标尺]]` — 结构距离 / 行为距离 / 结晶测试
-- `[[Proteus-自进化harness框架-摘要]]` — 仓库精读摘要
-- `[[Agent]]` — 2026 harness 竞争语境
-- `[[每日AI素材-2026-09-15-摘要]]` — 同日 RSI 热点
-- `[[双环知识飞轮]]` — 另一种「自生长」范式（人+库），可对照
+- [[Harness自进化]] — 核心概念（演化对象从权重到 harness）
+- [[自进化测量标尺]] — 结构距离 / 行为距离 / 结晶测试
+- [[Proteus-自进化harness框架-摘要]] — 仓库精读摘要
+- [[Agent]] — 2026 harness 竞争语境
+- [[每日AI素材-2026-09-15-摘要]] — 同日 RSI 热点
+- [[双环知识飞轮]] — 另一种「自生长」范式（人+库），可对照

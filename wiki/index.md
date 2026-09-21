@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-09-20 | 内容页：42（34 seed / 8 growing） | 元页面：5 | 素材总数：25
+> 最后更新：2026-09-21 | 内容页：43（34 seed / 9 growing） | 元页面：5 | 素材总数：25
 
 本索引是 LLM 的内容导向导航入口。每次 ingest / query / lint / publish 操作后都会更新。
 
@@ -34,7 +34,7 @@
 - [[iOS内部分发与App Store合规]] - Unlisted 分发四件套与常见拒审条款 (sources: 1)
 - [[双环知识飞轮]] - 编译环+互动环+回流带，让「库」与「人」一起生长 (sources: 2)
 - [[ICAP学习框架]] - 学习方式分级 P/A/C/I，效果 I > C > A > P (sources: 1)
-- [[Harness自进化]] - 自改进从权重移到 harness；四相位 episode 与事务契约 (sources: 1)
+- [[Harness自进化]] - 自改进从权重移到 harness；四相位 episode 与事务契约 (sources: 4)
 - [[自进化测量标尺]] - 结构距离/行为距离/结晶测试：测演化不只测任务分 (sources: 1)
 
 ## Summaries
@@ -54,6 +54,7 @@
 - [[每日AI素材-2026-09-19-晚-摘要]] - 四渠道晚间头部 AI 素材摘要，harness 成本度量(HarnessTax) + coding-agent/skills 生态 + 边缘自动化模型 + 多模态推理优化 + AI 治理合规 (2026-09-19)
 - [[每日AI素材-2026-09-20-摘要]] - 四渠道头部 AI 素材摘要（每条均带可点击链接）；harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR) (2026-09-20)
 - [[每日AI素材-2026-09-20-晚-摘要]] - 四渠道晚间头部 AI 素材摘要（每条带可点击链接）；coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复 + 推理路由经济学/REALM 补强 harness 成本度量 (2026-09-20 晚)
+- [[每日AI素材-2026-09-21-摘要]] - 四渠道头部 AI 素材摘要（每条带可点击链接）；agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁模型 + Paper2Agent 论文即可执行 agent (2026-09-21)
 - [[Proteus-自进化harness框架-摘要]] - 仓库精读：四相位 episode、可移除 disposition、三把测量尺 (2026-09-16)
 
 ## Comparisons

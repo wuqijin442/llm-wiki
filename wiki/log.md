@@ -2,6 +2,47 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-21] ingest | 每日AI素材-2026-09-21（四渠道头部采集 + 增量入库，每条附可点击链接）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-21.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点；CSDN 接口再次仅返 nickName+viewCount 降级记「标题未取到」，不编造链接；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 25 篇（排除 `80-Templates` 与 `articles/README.md`）；24 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）
+- 新建：[[每日AI素材-2026-09-21-摘要]]（摘要页：六大信号——agent 技能从代码库挖掘成共识（CodeMidas 2609.22068 / GraphSkillEvo 2609.21749 / 智源 DisCo）、harness 建议随上下文窗口失效（176 设定消融 SWE-Bench 35.7→2.7）、Skills over MCP SEP-2640 Final（skill:// URI）、coding agent 数据外泄威胁模型（ZCode 上传全量 git 历史）、Paper2Agent 论文即可执行 MCP agent、离线知识服务器 project-nomad + 端侧/成本工程；含待核实 7 项；正文与外链均为可点击 Markdown）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-21）」H3 子节；相关链接 +1；updated→2026-09-21，status 维持 growing）
+- 更新：[[Harness自进化]]（frontmatter +1 source；「与相关概念的边界」节补「外部印证（2026-09-21）」——技能从代码库挖掘成共识（skill 即被测 surface）+ harness 测量须绑定上下文窗口 + Skills over MCP 协议化；相关链接 +1；updated→2026-09-21，status 维持 growing）
+- 更新：[[RAG]]（frontmatter +1 source；补「知识即可执行：论文即 MCP Agent」节（Paper2Agent）；相关链接 +1；updated→2026-09-21，status 维持 growing）
+- 台账：index.md（42→43 页、素材 24→25）、log.md、growth.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md + RAG.md；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15 趋势节与 09-16/18/19/19晚/20/20晚 信号 H3 → 新增 09-21 信号沿用 H3 子节规避重复 H2
+- 意外与未解问题：① CSDN 热榜接口连续多日降级、本轮仅返 nickName+viewCount，按纪律记「标题未取到」、0 有效条目；② Gitee explore/llm 为存量热度口径（更新时间多为历史值），非当日趋势，Agents-Flex 第三次把「LLM Wiki」列为内置能力仍为社区框架级印证；③ GitHub Trending「今日 Star」为页面声称值未独立核验；④ 本批次顺带把 09-21 用户触发的 lint 修复（未提交）一并纳入本次 commit（index 素材计数 24、Harness sources 1→4、反引号死链解包、status 修正），因 step 6 强制自动提交
+- 待核实：CodeMidas/GraphSkillEvo/DisCo 数值来自第三方日报/媒体与 arXiv 摘要未逐条对照正文；harness 176 设定消融来自 Daily AI Brief 转述未对照原论文；ZCode 外泄为单源 researcher 报告（blog.ferstar.org）非厂商披露/CVE 待独立确认；SEP-2640 状态来自 Daily AI Brief 未直接核 modelcontextprotocol.io；Paper2Agent 数字（74/100、14 美元/45min）来自网易转述 Nature 未读原文；MiniCPM5-2B/FastContext 数字来自 ima 聚合未对照官方
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push；连同 09-21 未提交 lint 修复一并推送）
+
+## [2026-09-21] lint-resolve | 解决遗留问题（用户指令「解决遗留问题」）
+
+- 触发：用户要求解决 09-21 lint 修复后仍余的「遗留」——33 个 seed 页
+- 核查：重跑 lint，33 个 seed 页 status 与 sources 完全一致（均 1 来源）；raw/ 24 篇知识素材 **100% 已消化（24/24）**，无任何闲置素材可作第二来源
+- 关键发现：33 seed 中有 **9 个 raw 素材被拆成多张「角度页」**（如一份 DGX 记忆素材 → `concepts/AI智能体分权治理` + `entities/Ollama`），属正常策展，**非重复页**；合并会丢失粒度
+- 结论：seed 页**无法靠机械加源消除**——硬加第二来源 = 编造证据，违反 AGENTS §5；唯一合法提升路径是未来 ingest 引入真实独立的第二素材。判定为 **deferred-normal 状态，非缺陷**
+- 已落地动作：将 09-21 lint 修复中暴露的脚本误报根因固化进 `skills/llm-wiki/SKILL.md`「Lint 实操防坑」小节（反引号死链必须排除 / 正则不过度匹配 / 元页面合法目标 / status-sources 一致性 / 一源多角勿合并），防下周一自动化重蹈
+- 遗留：33 seed 页仍待后续 ingest 补第二来源；工作树含未提交改动（09-21 三项修复 + 本 SKILL.md 固化），未构建未提交，待用户明确「提交」后 commit/push
+- 约束：未改 wiki 内容页 / raw / .obsidian
+
+## [2026-09-21] lint-fix | 应用三项修复（用户指令「1、2、3都做」）
+
+- 触发：用户确认应用 09-21 只读 lint 提出的三项修复（见同日 lint 条目）
+- 修复①（index 计数）：index.md 素材总数 25→24（消 09-14 遗留 +1 漂移）；同步 Harness自进化 索引条 (sources: 1)→(sources: 4)；索引头 34 seed/8 growing→33 seed/9 growing
+- 修复②（链接网络）：解包 5 页被反引号封死的关联死链 36 处（Proteus / 自进化测量标尺 / Proteus-摘要 / 每日AI素材-2026-09-15-摘要 / 每日AI素材-2026-09-16-摘要），使既有意图链接变为真实可点击链接；新增 [[每日AI素材-2026-09-20-摘要]] 关联页（3 条出链）；[[本地优先AI创作]]→[[ComfyUI]]、[[Agent]]→[[GitHub-AI周报2026-08-09]] 两条入链；结果：孤岛 3→0、零出链 7→0（注：每日18 为脚本误报，已排除）
+- 修复③（Harness自进化 status）：status seed→growing（sources=4 合规）；同步 bump 9 个被改页面的 updated→2026-09-21
+- 复核：修复后重跑 lint —— 孤立页 0 / 零出链 0 / 断链 0 / 字段完整 42/42 / status 与 sources 一致（33 seed / 9 growing）
+- 备注：未改 raw / .obsidian；未构建、未提交（待用户确认后再 commit/push）
+
+## [2026-09-21] lint | 每周一 09:00 只读健康检查（自动化）
+
+- 范围：全库 42 内容页 + 5 元页面 + 24 知识素材（raw 排除 80-Templates 与 articles/README）
+- 结论：四项生长指标全绿（未消化素材 0 / 缺字段 0 / 超 90 天未更新 0 / 断链 0）；字段完整 42/42；sources 全部解析成功；矛盾检测 spot-check 无硬冲突
+- 发现：① index 素材总数记 25 实为 24（09-14 遗留 +1 漂移）；② 3 孤岛（ComfyUI / GitHub-AI周报2026-08-09 / Proteus-自进化harness框架-摘要）；③ 7 零出链页（Proteus / 自进化测量标尺 / 每日AI素材-2026-09-15·16·18·20-摘要 / Proteus-摘要）——其中 6 页的关联链接被反引号封死成死链（Obsidian 不渲染），每日20 无任何关联链接；每日18 为脚本误报（实为 7 条真实出链）；④ Harness自进化 status=seed 但 sources=4，违反 09-12 source-count 规则
+- 台账：growth.md §9、lifecycle.md §6 各追加一行（均 2026-09-21，标注「仅追加台账、未改内容页」）
+- 约束：本轮只读，未改 wiki 内容页 / raw / .obsidian，未构建、未提交
+
 ## [2026-09-20 晚] ingest | 每日AI素材-2026-09-20-晚（四渠道头部采集 + 增量入库，每条附可点击链接，同日第 2 批）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-20-晚.md`（本自动化第 0 步采集产出；同日早间 `每日AI素材-2026-09-20.md` 已入库，本批为 21:00 自动化运行，文件名带 `-晚` 遵守 raw 只读纪律、避免覆盖已消化文件；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日/近期热点补充；raw 既有文件零改动）

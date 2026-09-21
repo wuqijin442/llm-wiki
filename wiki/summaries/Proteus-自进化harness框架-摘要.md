@@ -10,7 +10,7 @@ tags:
   - 材料摘要
 category: summaries
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-21
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
 description: 仓库精读摘要：Proteus 让任意 agent harness 自我重写并测量变化——四相位 episode、可移除 disposition、结构/行为/结晶三把尺。
@@ -53,10 +53,10 @@ scope: MIT 开源研究预览 v0.3.0（克隆快照 962304b，2026-08-28）；�
 
 ## 与本库关联
 
-- 实体详情：`[[Proteus]]`
-- 概念提炼：`[[Harness自进化]]`、`[[自进化测量标尺]]`
-- 趋势呼应：`[[每日AI素材-2026-09-15-摘要]]` 的 RSI 热点；`[[Agent]]` 的 harness 竞争观察
-- 方法论对照：`[[双环知识飞轮]]`（人/库双环）vs Proteus（harness 单主体自改+测量）；`[[自生长知识库实战-苍何]]`（LLM Wiki 编译环）
+- 实体详情：[[Proteus]]
+- 概念提炼：[[Harness自进化]]、[[自进化测量标尺]]
+- 趋势呼应：[[每日AI素材-2026-09-15-摘要]] 的 RSI 热点；[[Agent]] 的 harness 竞争观察
+- 方法论对照：[[双环知识飞轮]]（人/库双环）vs Proteus（harness 单主体自改+测量）；[[自生长知识库实战-苍何]]（LLM Wiki 编译环）
 
 ## 待核实
 

@@ -126,5 +126,10 @@ SORT updated DESC
 | 2026-09-20 | 1 | 2 | 0 | 0.67 | 0 | 每日素材采集(第0步)产出 raw/00-Inbox/每日AI素材-2026-09-20.md（**每条附可点击链接**，纪律升级见 skills/llm-wiki/SKILL.md「采集链接纪律」），消化为摘要页 1 + [[Agent]] 信号子节补充 + [[Harness自进化]] 外部印证出链（harness 设计层实证 2609.20804 / SoL-Pi / C2C + 世界模型 JEPA-Anything + 概率即输出 Jev/Von + 医疗影像开源 DAMORADAR）；CSDN 接口字段缺失该渠道降级；素材 23→24、页 40→41 |
 | 2026-09-20 晚 | 1 | 2 | 0 | 0.67 | 0 | 每日素材采集(第0步晚间第2批)产出 raw/00-Inbox/每日AI素材-2026-09-20-晚.md（每条附可点击链接），消化为摘要页 1 + [[Agent]] 信号子节补充 + [[Harness自进化]] 外部印证出链（coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI 新形态 + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 接口恢复 + 推理路由经济学/REALM 补强 harness 成本度量）；CSDN 接口本轮恢复正常（此前多日降级）；素材 24→25、页 41→42 |
 
-> **累计 travel（至 2026-09-20 晚）** = 24+4+6+2+2+7+3+3+3+3+3+3 = **63** 单位变动（不含机制搭建行）。
+| 2026-09-21 | 0 | 0 | 0 | — | 0 | 只读 lint（每周一 09:00 自动化）：四项生长指标全绿（未消化素材0 / 缺字段0 / 超90天未更新0 / 断链0）；但检出 index 素材总数漂移(记25→实为24，09-14 遗留 +1)、3 孤岛(ComfyUI / GitHub-AI周报2026-08-09 / Proteus-自进化harness框架-摘要)、7 零出链页(Proteus / 自进化测量标尺 / 每日AI素材-2026-09-15·16·18·20-摘要)、Harness自进化 status=seed 但 sources=4 违反 09-12 规则；矛盾检测 spot-check 无硬冲突；34 seed / 8 growing |
+| 2026-09-21 修复 | 0 | 3 | 8 | 1.00 | 0 | 应用 09-21 lint 三项修复（用户指令）：① index 素材总数 25→24 + Harness 索引 sources 1→4 + 头 33 seed/9 growing；② 解包 5 页反引号死链 36 处 + 新增每日20 关联页 + 2 条入链（本地优先AI创作→ComfyUI、Agent→GitHub-AI周报），孤岛 3→0、零出链 7→0（每日18 误报已排除）；③ Harness自进化 status seed→growing（sources=4 合规） |
+| 2026-09-21 遗留 | 0 | 0 | 0 | — | 0 | 解决遗留：33 seed 页经核查为真实单来源（9 素材一源多角、非重复）、无闲置素材（24/24 消化），不可机械加源（违反§5）；固化 lint 防坑至 SKILL.md（非 wiki 页，不计入 travel）；seed 状态 deferred-normal |
+| 2026-09-21 入库 | 1 | 3 | 0 | 0.75 | 0 | 每日素材采集(第0步)产出 raw/00-Inbox/每日AI素材-2026-09-21.md，消化为摘要页 1 + [[Agent]]/[[Harness自进化]]/[[RAG]] 三页信号补充（agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁 + Paper2Agent 论文即可执行）；CSDN 接口降级 0 有效条目；素材 24→25、页 42→43 |
+
+> **累计 travel（至 2026-09-21 入库）** = **78** 单位变动（含 09-21 修复轮 11 + 本日入库 4；不含机制搭建行）。
 > 复盘只记"变化"，不记流水。参照 `wiki/log.md` 的详细记录填写。
