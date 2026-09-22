@@ -1,6 +1,6 @@
 # Wiki Index
 
-> 最后更新：2026-09-21 | 内容页：43（34 seed / 9 growing） | 元页面：5 | 素材总数：25
+> 最后更新：2026-09-22 | 内容页：44（34 seed / 10 growing） | 元页面：5 | 素材总数：26
 
 本索引是 LLM 的内容导向导航入口。每次 ingest / query / lint / publish 操作后都会更新。
 
@@ -55,6 +55,7 @@
 - [[每日AI素材-2026-09-20-摘要]] - 四渠道头部 AI 素材摘要（每条均带可点击链接）；harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR) (2026-09-20)
 - [[每日AI素材-2026-09-20-晚-摘要]] - 四渠道晚间头部 AI 素材摘要（每条带可点击链接）；coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复 + 推理路由经济学/REALM 补强 harness 成本度量 (2026-09-20 晚)
 - [[每日AI素材-2026-09-21-摘要]] - 四渠道头部 AI 素材摘要（每条带可点击链接）；agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁模型 + Paper2Agent 论文即可执行 agent (2026-09-21)
+- [[每日AI素材-2026-09-22-摘要]] - 四渠道头部 AI 素材摘要（每条带可点击链接）；harness 被蒸馏/商品化(Harness-Zero + Salesforce Enterprise AI Harness) + agent 治理升维(UN 面板/Meta Muse/共谋) + 记忆成本前沿(DolphinBench/语义熵路由) + RSI 医疗化(MedRSI) + MiMo-V2.6/微软 TS→Rust (2026-09-22)
 - [[Proteus-自进化harness框架-摘要]] - 仓库精读：四相位 episode、可移除 disposition、三把测量尺 (2026-09-16)
 
 ## Comparisons

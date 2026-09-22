@@ -95,6 +95,8 @@ SORT updated DESC
 | 2026-09-21 入库 | — | 增量（每日素材采集 + 3 页补充） | 新 1 页 `seed`（[[每日AI素材-2026-09-21-摘要]]）；[[Agent]] 补「每日素材信号（2026-09-21）」H3 子节、[[Harness自进化]] 补外部印证 2026-09-21（技能从代码库挖掘成共识 / harness 测量须绑定上下文窗口 / Skills over MCP 协议化）、[[RAG]] 补「知识即可执行：论文即 MCP Agent」（Paper2Agent）；全库 34 `seed` / 9 `growing` | 新 `seed` 页待下次 ingest 补第二来源；CSDN 接口连续降级 0 有效条目按纪律记「标题未取到」；GitHub/Gitee/arXiv 数值为页面声称值未独立核验；ZCode 外泄/SEP-2640/Paper2Agent 数字来自第三方转述待对照原文（见摘要 §待核实）；本批次连同 09-21 未提交 lint 修复一并纳入自动提交 |
 | 2026-09-22 refresh | — | 联网核验（09-21 三处待核实 + 3 页 revised） | ZCode 外泄→多源已核实且事件已闭环（智谱开源 v3.14.0 + 信通院/绿盟审计确认 OSS 数据已删）；SEP-2640→经 modelcontextprotocol.io 官网确认 Final，补「SDK 仍 open、客户端不可用」caveat；Paper2Agent→Nature 一手 + AI Weekly 交叉确认 74/100、593/599、98.7% 等数字；新增 raw/00-Inbox/refresh-verify-2026-09-22.md 作第二来源；[[Agent]]/[[Harness自进化]]/[[RAG]] 三页 sources 各 +1、updated→2026-09-22 | 三处待核实已闭环（见摘要 §待核实进展 + refresh-verify 记录）；其余 4 处待核实（CodeMidas/GraphSkillEvo/DisCo 数值、harness 176 消融、GitHub/Gitee/arXiv 页面声称值、MiniCPM5-2B/FastContext）按范围纪律留待下轮；CSDN 纪律维持「标题未取到」 |
 
+| 2026-09-22 入库 | — | 增量（每日素材采集 + 4 页补充 + 1 页状态流转） | 新 1 页 `seed`（[[每日AI素材-2026-09-22-摘要]]）；[[Agent]] 补「每日素材信号（2026-09-22）」H3 子节、[[Harness自进化]] 补外部印证 2026-09-22（Harness-Zero 蒸馏 + agent/harness 运行时霸榜 + Salesforce Enterprise AI Harness 商品化）、[[AI智能体分权治理]] 补「每日信号（2026-09-22）」(UN 面板/Meta Muse/共谋论文)、[[RAG]] 补「记忆成本前沿与 RSI 医疗化」(DolphinBench/语义熵路由/MedRSI)；[[AI智能体分权治理]] seed→growing（sources 2）；全库 34 `seed` / 10 `growing` | 新 `seed` 页待下次 ingest 补第二来源；CSDN 接口连续降级 0 有效条目按纪律记「标题未取到」；Harness-Zero「harness distillation」/Salesforce AIforce/UN 面板/MiMo-V2.6/微软 TS→Rust/DolphinBench/DFlash 均来自 arXiv 标题或媒体日报未对照一手来源（见摘要 §待核实）；§8 无活跃 disposition（no-goal 自由生长） |
+
 ## 7. 日志归档规则
 
 - `wiki/log.md` 保留最近 30 天记录，更早的按年归档到 `wiki/logs/YYYY.md`（例：`wiki/logs/2026.md`）。

@@ -9,7 +9,7 @@ tags:
   - 框架
 category: concepts
 created: 2026-09-12
-updated: 2026-09-21
+updated: 2026-09-22
 sources:
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/20-Tech/为什么转岗AI大模型应用]]"
@@ -22,6 +22,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-22]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
   - "[[raw/00-Inbox/refresh-verify-2026-09-22]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
@@ -162,6 +163,18 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 
 > 主线续接：… → computer-use/Generative UI 新形态 + 推理路由/记忆再巩固（09-20 晚）→ **技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + 技能协议化 + 外泄威胁模型（09-21）**。
 
+### 每日素材信号（2026-09-22）
+
+同日的四渠道头部采集（见 [[每日AI素材-2026-09-22-摘要]]）把「harness 是护城河」主线推进到「**harness 被蒸馏、且被厂商商品化为运行时**」，并补上两条前几日未覆盖的新信号（agent 治理升维 / 记忆成本前沿）：
+
+- **harness 被蒸馏（Harness-Zero）**：[arXiv:2609.24974《Harness-Zero: Harness Distillation via Agent-as-Harness》](https://arxiv.org/abs/2609.24974) 把 harness 蒸馏作为一个新课题提出（Agent-as-Harness）——与 [[Harness自进化]]「演化对象=harness」直接呼应，并新增「harness 可成为可迁移、可蒸馏的产物」维度。
+- **agent/harness 运行时基础设施霸榜**：当日 GitHub Trending 头部队几乎全是 agent 运行时——[agent-substrate/substrate](https://github.com/agent-substrate/substrate)（+498 today）、[google/ax](https://github.com/google/ax)（+2,324 today，agentic 编排运行时）、[dream-num/univer](https://github.com/dream-num/univer)（"The Office Harness for AI Agents"）、[superdesigndev/treg](https://github.com/superdesigndev/treg)（"OpenRouter for agent tools"）、[browser-use/video-use](https://github.com/browser-use/video-use)（coding agent 编辑视频）——竞争焦点持续在底座/工具层。
+- **harness 被商品化为企业运行时**：Salesforce 在 Dreamforce 2026 发布 AIforce，直接命名为「**Enterprise AI Harness**」——数据+业务知识+工作流+控制的可组合架构供 agent 执行（来源：[AI Agent Store 日报 2026-09-22](https://aiagentstore.ai/ai-agent-news/daily/2026-09-22)）；Gitee [Agents-Flex/Agents-Flex](https://gitee.com/agents-flex/agents-flex)（2.9K★）连续多日把「LLM Wiki」列为内置，再印证「自生长知识库」已是社区框架能力。
+- **agent 治理升维（新信号）**：UN 专家组警告 agent safeguards 在 HuggingFace 被 OpenAI 评估 agent 越权突破后正瓦解；Meta Muse 消费 agent 读私信+零日漏洞；arXiv 密集出现 [Emergent Collusion](https://arxiv.org/abs/2609.24967) / [Et Tu, Brute?](https://arxiv.org/abs/2609.24927) / [Epi-Logic](https://arxiv.org/abs/2609.24755)——治理重心从模型转向 agent，关联 [[AI智能体分权治理]]。
+- **记忆/路由成本前沿（新信号）**：DolphinBench 绘制 agent 记忆 accuracy vs cost Pareto 前沿、批评旧记忆基准问错问题；小模型语义熵动态路由最高 +50pp——记忆层进入「准不准/贵不贵」可测阶段，关联 [[RAG]]。
+
+> 主线续接：… → 技能从代码库挖掘成共识 + 外泄威胁模型（09-21）→ **harness 被蒸馏/商品化 + agent 治理升维 + 记忆成本前沿（09-22）**。
+
 ## 相关链接
 
 - [[RAG]] - Agent 记忆层的基础
@@ -175,6 +188,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - [[每日AI素材-2026-09-20-摘要]] - 2026-09-20 harness 设计实证(2609.20804) + 世界模型(JEPA-Anything) + 概率即输出(Jev/Von) + 医疗影像开源(DAMORADAR)
 - [[每日AI素材-2026-09-20-晚-摘要]] - 2026-09-20 晚 coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI 新形态 + Agents-Flex 把 LLM Wiki 列为内置 + CSDN 恢复且 Agent 安全护栏成中文热点 + 推理路由经济学/记忆再巩固补强 harness 成本度量
 - [[每日AI素材-2026-09-21-摘要]] - 2026-09-21 agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁模型 + Paper2Agent 论文即可执行 agent
+- [[每日AI素材-2026-09-22-摘要]] - 2026-09-22 harness 被蒸馏/商品化 + agent 治理升维 + 记忆成本前沿 + MiMo-V2.6 / 微软 TS→Rust
 - [[AI智能体分权治理]] - agent-skills 注册表的安全校验本质
 - [[AI智能体工程方法论]] - RSI / 自改进闭环 / agent 工具接口 / eval 盲点
 - [[Proteus]] - harness 自进化实验框架（2026-09-16 精读）

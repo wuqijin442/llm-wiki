@@ -14,6 +14,21 @@
 - 范围纪律：其余 4 处待核实（CodeMidas/GraphSkillEvo/DisCo 数值、harness 176 消融、GitHub/Gitee/arXiv 页面声称值、MiniCPM5-2B/FastContext）按「趋势采集固有属性 / 未对照原文」留待下轮；CSDN 接口纪律维持「标题未取到」不作编造。
 - 备注：未改 `.obsidian/`、未构建；入库后由 step 6 自动 commit + push。
 
+## [2026-09-22] ingest | 每日AI素材-2026-09-22（四渠道头部采集 + 增量入库，每条附可点击链接）
+
+- 来源：`raw/00-Inbox/每日AI素材-2026-09-22.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点；CSDN 接口再次仅返 nickName+viewCount 降级记「标题未取到」、不编造链接；raw 既有文件零改动）
+- 差异检测：raw/ 知识素材共 26 篇（排除 `80-Templates` 与 `articles/README.md`）；25 篇已被引用，本次新建每日素材文件 = 唯一新增未消化素材（待消化集合 = 1）；`raw/00-Inbox/refresh-verify-2026-09-22.md` 已于 09-22 早间 refresh 被三概念页 sources 引用、非未消化
+- 新建：[[每日AI素材-2026-09-22-摘要]]（摘要页：五大信号——harness 被蒸馏/商品化（Harness-Zero 2609.24974 + agent/harness 运行时霸榜 + Salesforce Enterprise AI Harness）、agent 治理升维（UN 面板/Meta Muse/Emergent Collusion/Et Tu Brute/Epi-Logic）、RSI 医疗化（MedRSI 2609.24838 + Designer-RSI + ZCode 开源）、记忆成本前沿（DolphinBench accuracy-cost Pareto + 语义熵动态路由 +50pp）、推理效率（MiMo-V2.6 Pro / 微软 TS→Rust 15.9x / DFGlash 2.95x / RBS-Attention 11.9x / World State Generator）；含待核实 5 项；正文与外链均为可点击 Markdown）
+- 更新：[[Agent]]（frontmatter +1 source；新增「每日素材信号（2026-09-22）」H3 子节；相关链接 +1；updated→2026-09-22，status 维持 growing）
+- 更新：[[Harness自进化]]（frontmatter +1 source；「与相关概念的边界」节补「外部印证（2026-09-22）」——Harness-Zero harness 蒸馏 + agent/harness 运行时基础设施霸榜 + Salesforce Enterprise AI Harness 商品化，把「演化对象=harness」推进到「harness 可蒸馏/可商品化」；相关链接 +1；updated→2026-09-22，status 维持 growing）
+- 更新：[[AI智能体分权治理]]（frontmatter +1 source；新增「每日信号（2026-09-22）」节——UN 面板 agent safeguards 瓦解 + Meta Muse 隐私/零日 + arXiv 共谋/经济错配/运行时控制；updated→2026-09-22，status seed→growing（sources 2））
+- 更新：[[RAG]]（frontmatter +1 source；补「记忆成本前沿与 RSI 医疗化」节——DolphinBench 记忆 accuracy-cost 前沿 + 语义熵动态路由 + MedRSI 医疗 agent RSI；相关链接 +1；updated→2026-09-22，status 维持 growing）
+- 台账：index.md（43→44 页、素材 25→26、34 seed/10 growing）、log.md、growth.md（added 1 / revised 4 / merged 0，churn=0.80，travel 81→86）、lifecycle.md
+- Propose 清单（本次遵守）：新建摘要页 1 + 增量归并 Agent.md + Harness自进化.md + AI智能体分权治理.md + RAG.md；§8 当前无活跃 disposition（默认 no-goal 自由生长），不强行造内容；已识别冲突点=Agent.md 已有 09-14/15 趋势节与 09-16/18/19/19晚/20/20晚/21 信号 H3 → 新增 09-22 信号沿用 H3 子节规避重复 H2
+- 意外与未解问题：① CSDN 热榜接口连续多日（09-19/21/22）仅返 nickName+viewCount，按纪律记「标题未取到」、0 有效条目；② Gitee explore/llm 为存量热度口径（更新时间多为历史值），非当日趋势，Agents-Flex 连续多日把「LLM Wiki」列为内置仍属社区框架印证；③ GitHub Trending「今日 Star」为页面声称值未独立核验（google/ax +2,324 / agent-substrate +498 等）；④ Harness-Zero「harness distillation」仅据 arXiv 标题+作者、未读正文，其「蒸馏」语义是否等同本库「harness 自进化」待对照
+- 待核实：Harness-Zero 2609.24974 未读正文、蒸馏语义待对照；GitHub/Gitee/arXiv 数值为页面声称值未独立核验；Salesforce AIforce「Enterprise AI Harness」/UN 面板/MiMo-V2.6/微软 TS→Rust/DolphinBench/DFlash 均来自媒体日报（aiagentstore/aiweekly/segmentfault/wire.rundatarun）未对照一手来源；CSDN 接口纪律维持「标题未取到」不作编造
+- 备注：未改 `.obsidian/`、未构建、未提交（入库后由 step 6 自动 commit + push）
+
 ## [2026-09-21] ingest | 每日AI素材-2026-09-21（四渠道头部采集 + 增量入库，每条附可点击链接）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-21.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点；CSDN 接口再次仅返 nickName+viewCount 降级记「标题未取到」，不编造链接；raw 既有文件零改动）

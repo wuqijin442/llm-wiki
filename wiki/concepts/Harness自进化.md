@@ -11,13 +11,14 @@ tags:
   - 方法论
 category: concepts
 created: 2026-09-16
-updated: 2026-09-21
+updated: 2026-09-22
 sources:
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-19-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-20-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-22]]"
   - "[[raw/00-Inbox/refresh-verify-2026-09-22]]"
 description: 自改进的重心从模型权重移到 harness（prompts/memory/skills/tools/控制循环）；用四相位 episode 与事务契约让 harness 安全地改写自己。
 status: growing
@@ -86,6 +87,7 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - **外部印证（2026-09-20）**：`[[每日AI素材-2026-09-20-摘要]]` 把「harness 可测量」主线推进到**设计层实证密集化**——① [arXiv:2609.20804《An Empirical Study of Harness Design for Coding Agents》](https://arxiv.org/abs/2609.20804) 用固定执行循环、单独变换 planning/action space/context management 的组件级实验，把「harness 护城河」落成可复现实验；② [NVIDIA SoL-Pi](https://agihunt.info/en/daily/2026-09-20?f=dr) 在 harness 层跑自研究循环（Action Fusion / Online Context Compact / ObservationPack），宣称约 50% 更少 token、约 33% 更低 API 成本；③ [C2C（Cache-to-Cache，清华 + 无问芯穹，ICLR 2026）](https://agihunt.info/en/daily/2026-09-20?f=dr) 从多 agent 通信中去掉文本、用 Neural Fuser 嫁接 KV-cache。三者共同坐实本概念「harness 是组件级可测量、需被测量的科学对象」主张，并为 `[[自进化测量标尺]]` 提供真实度量场景：token 开销、机制存活率、跨层 cache 嫁接效率均可成为 harness 演化的被测 surface。
 - **外部印证（2026-09-20 晚）**：`[[每日AI素材-2026-09-20-晚-摘要]]` 把「harness 可测量、需被测量」主张从「设计层实证」推进到**成本侧度量的两个新切面**——① [Inference routing economics（arXiv 2609.15992）](https://arxiv.org/abs/2609.15992) 用「廉价模型信心不足才调用贵模型」的阈值为推理网络动态路由不同成本/能力 LLM，开源模型实验大幅降本且维持性能；这与 09-19 晚 HarnessTax「同一模型三套 harness 成本差最高 5x」同构——**路由即一种 harness 成本优化面**，给 [[自进化测量标尺]] 提供「每请求 token / 路由决策」被测 surface。② [REALM（arXiv 2609.16055）](https://arxiv.org/abs/2609.16055) 把 agent 记忆当作持续演化的生命周期（异构认知图 + 检索反馈再巩固），而非静态向量库——再次坐实本概念「memory 是被演化、也需被约束的 surface」（与 09-18 ResidualAuth/MERIT 量化「记忆撤销失效」构成正反两面）。③ 同日 [Agents-Flex/Agents-Flex](https://gitee.com/agents-flex/agents-flex)（Gitee 2.9K★、3天前更新）把「LLM Wiki」列为框架内置能力，使 [[双环知识飞轮]] / [[自生长知识库实战-苍何]] 的「知识库自生长」主张再获社区框架级印证。
 - **外部印证（2026-09-21）**：`[[每日AI素材-2026-09-21-摘要]]` 把「演化对象=harness、且 harness 可测量需被测量」主张推进到**技能作为可进化 surface 的具体来源 + 测量必须绑定上下文窗口**——① 同日 [CodeMidas（arXiv:2609.22068）](https://arxiv.org/abs/2609.22068) / [GraphSkillEvo（arXiv:2609.21749）](https://arxiv.org/abs/2609.21749) / 智源 [DisCo/AREX-Skill](https://ima.qq.com/wiki/?shareId=46f5bcd8d0e86361201f2fe35852c35ddf673179f11f1ab332077d95ee9ec7e7) 三个独立团队同时得出「从现有代码库提炼 agent 技能/环境」是 agent 训练的关键路径（5,545 任务 / 图结构技能进化 / 5000+ 蒸馏技能，基准最高 +134.3%）——**skill 库本身就是 harness 演化的一类被测 surface**，与 09-20 C2C「多 agent 通信嫁接 KV-cache」同构：技能/记忆/通信都是可被演化、也需被约束的面。② [Daily AI Brief 2026-09-21](https://wire.rundatarun.io/briefs/2026-09-21) 报道的 176 设定消融显示 harness 建议随上下文窗口增长失效（SWE-Bench 增益 32k→128k 从 35.7 跌到 2.7 分）——直接给 [[自进化测量标尺]] 一个硬约束：**结构/行为距离测量必须标注被测模型的上下文预算**，否则「harness 变好」的读数会因窗口增大而失真。③ Skills over MCP（SEP-2640 Final，`skill://` URI，2026-09-22 经 modelcontextprotocol.io 官网核实）使技能从本地目录升级为协议级可寻址、可远程下发的资源，供应链后果使 skill surface 的治理从「项目内约定」外溢到「协议层」；**但「Final」仅协议层定稿，官方 Go / Python / TypeScript / C# SDK 的 Skills 支持 PR 仍 open，客户端尚不能端到端消费——规范稳定 ≠ 客户端可用**（详见 [[refresh-verify-2026-09-22]]）。
+- **外部印证（2026-09-22）**：`[[每日AI素材-2026-09-22-摘要]]` 把「演化对象=harness、且 harness 可测量需被测量」主张推进到「**harness 被蒸馏、且被厂商商品化为运行时**」两个新切面——① [arXiv:2609.24974《Harness-Zero: Harness Distillation via Agent-as-Harness》](https://arxiv.org/abs/2609.24974) 把 harness distillation 作为一个新课题提出（Agent-as-Harness），本库「演化对象=harness」从口号落成可研究问题；② 当日 GitHub Trending 头部队几乎全是 agent/harness 运行时基础设施（[agent-substrate/substrate](https://github.com/agent-substrate/substrate) +498 today、[google/ax](https://github.com/google/ax) +2,324 today 的 agentic 编排运行时、[dream-num/univer](https://github.com/dream-num/univer) 的 "Office Harness for AI Agents"、[superdesigndev/treg](https://github.com/superdesigndev/treg) 的 "OpenRouter for agent tools"、[browser-use/video-use](https://github.com/browser-use/video-use) 的 coding-agent 视频编辑），与 09-19「组件级科学化」、09-19 晚「成本侧度量」、09-20「设计层实证」构成连续证据链：harness 正从被测量的对象变成被**蒸馏/打包**的商品；③ Salesforce AIforce 直接命名「**Enterprise AI Harness**」（数据+业务知识+工作流+控制的可组合架构供 agent 执行，来源 [AI Agent Store 日报 2026-09-22](https://aiagentstore.ai/ai-agent-news/daily/2026-09-22)），使 harness 作为「企业级可组合执行面」进入主流厂商叙事——与 [[AI智能体分权治理]]「角色分层 + 变更治理闭环」互为表里：harness 商品化后，谁控制其内部约束成为治理问题。
 
 ## 参考实例
 
@@ -105,5 +107,6 @@ Staged activation（可选能力）：本 episode 四相位共读**同一冻结 
 - `[[每日AI素材-2026-09-20-摘要]]` - harness 设计层实证(2609.20804/SoL-Pi/C2C) + 世界模型 + 概率即输出 + 医疗影像开源
 - `[[每日AI素材-2026-09-20-晚-摘要]]` - coding-agent/harness 安全审计霸榜延续 + computer-use/Generative UI + Agents-Flex 把 LLM Wiki 列为内置 + 推理路由经济学/REALM 记忆再巩固补强成本度量
 - `[[每日AI素材-2026-09-21-摘要]]` - agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁模型 + Paper2Agent 论文即可执行
+- `[[每日AI素材-2026-09-22-摘要]]` - harness 被蒸馏(Harness-Zero) + agent/harness 运行时霸榜 + Salesforce Enterprise AI Harness 商品化
 - `[[LLM-Wiki-vs-RAG]]` - 知识库防腐坏：编译停摆则网络腐坏
 - `[[自生长知识库实战-苍何]]` - 自生长知识库的方法论原型

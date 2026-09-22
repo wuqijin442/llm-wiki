@@ -9,12 +9,13 @@ tags:
   - 机器学习
 category: concepts
 created: 2026-09-12
-updated: 2026-09-21
+updated: 2026-09-22
 sources:
   - "[[raw/00-Inbox/Obsidian-LLM-Wiki实操指南]]"
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
   - "[[raw/00-Inbox/refresh-verify-2026-09-22]]"
+  - "[[raw/00-Inbox/每日AI素材-2026-09-22]]"
 description: 检索增强生成（Retrieval-Augmented Generation），LLM 结合外部文档检索的主流交互方式。
 status: growing
 ---
@@ -57,6 +58,16 @@ status: growing
 
 > **caveat（补强）**：失败主因 = 缺可执行代码 / 缺数据或模型工件 / 环境失败 / 脚本不可泛化；论文未报告失败原因。执行通过验证 ≠ 科学结论正确，假设提出仍须人类主导。来源与细节见 [[每日AI素材-2026-09-21-摘要]]（信号五）+ [[refresh-verify-2026-09-22]]（核验记录）。同日 WebSearch 补充：面壁 MiniCPM5-2B / 微软 FastContext 也指向「知识/上下文检索下沉到专用小模型」的成本工程切面。
 
+## 记忆成本前沿与 RSI 医疗化（补强，2026-09-22）
+
+[[每日AI素材-2026-09-22-摘要]] 信号四、信号三把本页记忆层推进到「可测的 cost/accuracy 前沿」，并把 RSI（递归自我改进）补到医疗领域：
+
+- **记忆 accuracy vs cost Pareto 前沿**：DolphinBench 绘制 agent 记忆系统的 accuracy–cost 前沿，并批评旧记忆基准用「对话 QA」问错了问题（奖励回忆人说的话，而非 agent 记忆真实负载）；同期 Jev-Mem 提出 System-One 式快速记忆控制器（来源：[Daily AI Brief 2026-09-22](https://wire.rundatarun.io/briefs/2026-09-22)）。记忆层从「有没有」进入「准不准/贵不贵」的可测阶段——与 [[Harness自进化]]「memory 是被演化、也需被约束的 surface」同构。
+- **小模型语义熵动态路由**：WebSearch 热点指出 3B 以下端侧小模型 Token 级熵在 91% 数据集失效，用多采样聚类的**语义熵**恢复置信度并指导动态模型路由（SmolLM→Phi-3.5），综合准确率最高 +50 个百分点（来源：[SegmentFault AI 日报 2026-09-22](https://segmentfault.com/a/1190000048311861)）。
+- **RSI 医疗化**：[2609.24838 MedRSI: Recursive Self-Improvement for Medical Agents](https://arxiv.org/abs/2609.24838)（Junde Wu et al.）把递归自我改进用于医疗 agent，通过临床对齐的自演化持续改进；与 [[Agent]] 09-21 信号「技能从代码库挖掘」、本页「知识即可执行（Paper2Agent）」构成 RSI + 记忆 + 可执行知识的三联演进。
+
+> 待核实：DolphinBench / 语义熵路由 / MedRSI 均来自媒体日报或仅据 arXiv 标题，未对照一手论文。
+
 ## 参考实例
 
 NotebookLM 是典型 RAG 模式：扔文件即可问答，但知识不积累。
@@ -69,3 +80,4 @@ NotebookLM 是典型 RAG 模式：扔文件即可问答，但知识不积累。
 - [[Milvus]] - 生产级向量数据库
 - [[Agent]] - 记忆层是 RAG 之上的关键升级
 - [[每日AI素材-2026-09-21-摘要]] - 论文即可执行 agent（Paper2Agent）/ 知识即可执行
+- [[每日AI素材-2026-09-22-摘要]] - 记忆成本前沿(DolphinBench) + 语义熵动态路由 + MedRSI 医疗化 RSI
