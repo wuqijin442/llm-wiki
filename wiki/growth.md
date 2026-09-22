@@ -130,6 +130,7 @@ SORT updated DESC
 | 2026-09-21 修复 | 0 | 3 | 8 | 1.00 | 0 | 应用 09-21 lint 三项修复（用户指令）：① index 素材总数 25→24 + Harness 索引 sources 1→4 + 头 33 seed/9 growing；② 解包 5 页反引号死链 36 处 + 新增每日20 关联页 + 2 条入链（本地优先AI创作→ComfyUI、Agent→GitHub-AI周报），孤岛 3→0、零出链 7→0（每日18 误报已排除）；③ Harness自进化 status seed→growing（sources=4 合规） |
 | 2026-09-21 遗留 | 0 | 0 | 0 | — | 0 | 解决遗留：33 seed 页经核查为真实单来源（9 素材一源多角、非重复）、无闲置素材（24/24 消化），不可机械加源（违反§5）；固化 lint 防坑至 SKILL.md（非 wiki 页，不计入 travel）；seed 状态 deferred-normal |
 | 2026-09-21 入库 | 1 | 3 | 0 | 0.75 | 0 | 每日素材采集(第0步)产出 raw/00-Inbox/每日AI素材-2026-09-21.md，消化为摘要页 1 + [[Agent]]/[[Harness自进化]]/[[RAG]] 三页信号补充（agent 技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + Skills over MCP 定稿 + coding agent 外泄威胁 + Paper2Agent 论文即可执行）；CSDN 接口降级 0 有效条目；素材 24→25、页 42→43 |
+| 2026-09-22 refresh | 0 | 3 | 0 | 1.00 | 0 | Refresh 联网核验 09-21 三处待核实：ZCode 外泄→多源已核实+事件闭环（开源 v3.14.0+审计删数）、SEP-2640→经 MCP 官网确认 Final+补 SDK caveat、Paper2Agent→Nature 一手确认数字；新增 raw/00-Inbox/refresh-verify-2026-09-22.md 作第二来源；[[Agent]]/[[Harness自进化]]/[[RAG]] 三页各 +1 source、updated→2026-09-22；纯策展熵减（churn=1.00）；其余 4 处待核实按范围纪律留待下轮 |
 
-> **累计 travel（至 2026-09-21 入库）** = **78** 单位变动（含 09-21 修复轮 11 + 本日入库 4；不含机制搭建行）。
+> **累计 travel（至 2026-09-22 refresh）** = **81** 单位变动（含 09-21 修复轮 11 + 09-21 入库 4 + 09-22 refresh 3；不含机制搭建行）。
 > 复盘只记"变化"，不记流水。参照 `wiki/log.md` 的详细记录填写。

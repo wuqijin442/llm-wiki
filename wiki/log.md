@@ -2,6 +2,18 @@
 
 > 操作日志（时间导向记录）。每次操作追加一条，最近 30 天在此展示，更早记录归档至 `wiki/logs/`。
 
+## [2026-09-22] refresh | 联网核验 09-21 三处待核实（用户指令「接受建议」）
+
+- 触发：用户接受 09-21 ingest 收尾建议——「待核实项里的 ZCode 外泄 / SEP-2640 / Paper2Agent 数字建议下轮用 refresh 联网对照一手来源」。
+- 核验素材（新增 raw，不碰既有）：`raw/00-Inbox/refresh-verify-2026-09-22.md`（一手来源链接见各条）。
+- 对照结论：
+  - **ZCode 外泄（[[Agent]]）**：多源确认且事件已闭环——9-18 逆向曝光（ferstar，313MB 包、RSA 公钥服务端下发、.git 历史/LFS/reflog 全量上传阿里云 OSS、UI 开关无效）→ 智谱 9-21 宣布开源 ZCode v3.14.0 移除上传链路，信通院+绿盟审计确认 `zcode-prod` OSS 数据已删（云端零数据），数据曾流向新加坡主体 JINGSHENG HENGXING TECHNOLOGY PTE. LTD。从「威胁模型」升级为「已整改事件案例」。
+  - **SEP-2640（[[Harness自进化]]）**：经 modelcontextprotocol.io 官网确认 Final（skill:// URI、skills/list+skills/get 经 Resources primitive）；**补强 caveat**：规范 9/13 定稿，但官方 Go/Python/TypeScript/C# SDK 的 Skills 支持 PR 仍 open，客户端尚不能端到端消费——「Final」≠ 客户端可用。
+  - **Paper2Agent（[[RAG]]）**：Nature 一手（DOI 10.1038/s41586-026-11044-y，作者 Miao/Davis/Zhang/Pritchard/Zou）+ AI Weekly 二级交叉确认 09-21 数字：100 篇→74 可用 agent、599 工具提议 593 通过校验、AlphaGenome 98.7%/100%、GPR137 因果基因（Spearman 0.613）；补「失败主因=缺代码/缺数据/环境失败/脚本不可泛化」caveat。
+- 落盘：三概念页各 +1 source（[[refresh-verify-2026-09-22]]）、updated→2026-09-22；摘要页 §待核实三行标记【2026-09-22 已核实】+ 补校验来源；纯策展熵减（added 0 / revised 3 / merged 0），churn=1.00。
+- 范围纪律：其余 4 处待核实（CodeMidas/GraphSkillEvo/DisCo 数值、harness 176 消融、GitHub/Gitee/arXiv 页面声称值、MiniCPM5-2B/FastContext）按「趋势采集固有属性 / 未对照原文」留待下轮；CSDN 接口纪律维持「标题未取到」不作编造。
+- 备注：未改 `.obsidian/`、未构建；入库后由 step 6 自动 commit + push。
+
 ## [2026-09-21] ingest | 每日AI素材-2026-09-21（四渠道头部采集 + 增量入库，每条附可点击链接）
 
 - 来源：`raw/00-Inbox/每日AI素材-2026-09-21.md`（本自动化第 0 步采集产出；GitHub Trending / Gitee LLM / CSDN 热榜 / arXiv cs.AI + WebSearch 当日热点；CSDN 接口再次仅返 nickName+viewCount 降级记「标题未取到」，不编造链接；raw 既有文件零改动）

@@ -23,6 +23,7 @@ sources:
   - "[[raw/00-Inbox/每日AI素材-2026-09-20-晚]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
   - "[[raw/articles/2026-09-16-Proteus-自进化harness框架-仓库精读]]"
+  - "[[raw/00-Inbox/refresh-verify-2026-09-22]]"
 description: AI 智能体：能调工具、能续跑的自主任务执行体，RAG 之上记忆层是其关键组件。
 status: growing
 ---
@@ -157,6 +158,7 @@ GitHub Trending 当日头部再次出现多条 agent 基础设施集中冲榜，
 - **harness 建议随上下文窗口增长失效（176 设定消融）**：上下文管理在 SWE-Bench 增益从 32k 窗口 35.7 分跌到 128k 窗口 2.7 分——harness 决策须与模型升级绑定再测量节奏，而非一次性设计文档（强化 [[自进化测量标尺]] 须绑定上下文窗口变量）。
 - **Skills over MCP 定稿（SEP-2640 Final）**：agentskills.io 格式以 `skill://` URI 经 MCP 作资源提供（skills/list、skills/get），技能从本地目录变远程可下发，带来供应链后果——与「AGENTS.md 作为跨工具指令规范」同构。
 - **coding agent 数据外泄成具体威胁模型（延续安全审计化）**：智谱 ZCode 每次 prompt 打包完整工作区（含全量 .git 历史）加密上传阿里云 OSS、无 UI 开关；Patronus Scanner 上线 MCP 注入扫描；NIST Plugin4Shell 同周出现——关联 [[意图路由与服务端兜底]]「出口需显式核算」。
+- **ZCode 事件已闭环（2026-09-22 多源已核实）**：9-18 逆向曝光后，智谱 9-21 宣布**开源 ZCode v3.14.0 移除上传链路**，信通院 + 绿盟科技审计确认 `zcode-prod` OSS 数据已删（云端零数据）；数据曾流向新加坡主体 JINGSHENG HENGXING TECHNOLOGY PTE. LTD。从「威胁模型」升级为「已整改事件案例」——详见 [[refresh-verify-2026-09-22]]。
 
 > 主线续接：… → computer-use/Generative UI 新形态 + 推理路由/记忆再巩固（09-20 晚）→ **技能从代码库挖掘成共识 + harness 建议随上下文窗口失效 + 技能协议化 + 外泄威胁模型（09-21）**。
 

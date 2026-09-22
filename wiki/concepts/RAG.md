@@ -14,6 +14,7 @@ sources:
   - "[[raw/00-Inbox/Obsidian-LLM-Wiki实操指南]]"
   - "[[raw/20-Tech/RAG检索增强生成]]"
   - "[[raw/00-Inbox/每日AI素材-2026-09-21]]"
+  - "[[raw/00-Inbox/refresh-verify-2026-09-22]]"
 description: 检索增强生成（Retrieval-Augmented Generation），LLM 结合外部文档检索的主流交互方式。
 status: growing
 ---
@@ -43,13 +44,18 @@ status: growing
 | 交叉引用 | 无 | 自动维护的 `[[双链]]` 网络 |
 | 矛盾处理 | 不感知 | 主动标注 |
 
-## 知识即可执行：论文即 MCP Agent（补强，2026-09-21）
+## 知识即可执行：论文即 MCP Agent（补强，2026-09-21；2026-09-22 已核实）
 
-[[每日AI素材-2026-09-21-摘要]] 信号五：Stanford Paper2Agent（Nature）把一篇论文转成 MCP 服务器（Paper2MCP）再接兼容 agent，形成「虚拟通讯作者」——自动搭环境 / 提取工具 / 测试-修复。100 篇计算生物学论文中 74 篇端到端做成可用 agent。
+[[每日AI素材-2026-09-21-摘要]] 信号五：Stanford **Paper2Agent**（Nature 2026-09-16，DOI [10.1038/s41586-026-11044-y](https://www.nature.com/articles/s41586-026-11044-y)，作者 Jiacheng Miao / Joe R. Davis / Yaohui Zhang / Jonathan K. Pritchard / James Zou）把一篇论文转成 MCP 服务器（Paper2MCP）再接兼容 agent，形成「虚拟通讯作者」（virtual corresponding author）——自动搭环境 / 提取工具 / 测试-修复。
 
-这与「RAG vs LLM Wiki」的边界互补：传统 RAG 是「检索片段拼上下文」，Paper2Agent 走到「把方法封装为可执行的 MCP 工具 + 资源 + 提示」。知识从被动检索对象升级为可调用、可协作的活性组件——与 [[双环知识飞轮]] / [[自生长知识库实战-苍何]] 的「知识库自生长」同源，但前者是论文级、后者是库级。需注意：执行通过验证 ≠ 科学结论正确，假设提出仍须人类主导。
+**已核实数字（2026-09-22 经 Nature 一手 + AI Weekly 二级交叉确认）**：
+- 规模：**100 篇计算生物学论文 → 74 篇做成可用 agent**，599 工具提议、**593 通过自动校验**。
+- AlphaGenome showcase：22 工具、~45 min、$14；tutorial-derived 查询 **98.7%**（vs Claude+Repo 82.7%、Biomni 37.3%），novel 查询 **100%**（vs 78.7% / 56.0%）。
+- 多 agent 协作：AlphaGenome + MPRA-scCRISPRi + Perturb-seq 链锁定 **GPR137** 为银屑病变异 rs887314 可能因果基因（Spearman 0.613）。
 
-> 来源与细节见 [[每日AI素材-2026-09-21-摘要]]（信号五）。同日 WebSearch 补充：面壁 MiniCPM5-2B / 微软 FastContext 也指向「知识/上下文检索下沉到专用小模型」的成本工程切面。
+这与「RAG vs LLM Wiki」的边界互补：传统 RAG 是「检索片段拼上下文」，Paper2Agent 走到「把方法封装为可执行的 MCP 工具 + 资源 + 提示」。知识从被动检索对象升级为可调用、可协作的活性组件——与 [[双环知识飞轮]] / [[自生长知识库实战-苍何]] 的「知识库自生长」同源，但前者是论文级、后者是库级。
+
+> **caveat（补强）**：失败主因 = 缺可执行代码 / 缺数据或模型工件 / 环境失败 / 脚本不可泛化；论文未报告失败原因。执行通过验证 ≠ 科学结论正确，假设提出仍须人类主导。来源与细节见 [[每日AI素材-2026-09-21-摘要]]（信号五）+ [[refresh-verify-2026-09-22]]（核验记录）。同日 WebSearch 补充：面壁 MiniCPM5-2B / 微软 FastContext 也指向「知识/上下文检索下沉到专用小模型」的成本工程切面。
 
 ## 参考实例
 
